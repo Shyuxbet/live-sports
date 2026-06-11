@@ -517,6 +517,7 @@
 
 <script>
 const API_PERSISTED = "https://esports-api.lolesports.com/persisted/gw"
+const API_PERSISTED2 = "https://prod-relapi.ewp.gg/persisted/gw"
 const API_LIVE = "https://feed.lolesports.com/livestats/v1"
 const API_KEY = "0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z"
 const DDRAGON = "https://ddragon.leagueoflegends.com/cdn"
@@ -530,12 +531,19 @@ function headers() {
   return { "x-api-key": API_KEY }
 }
 
-async function fetchJSON(url, params = {}) {
-  const u = new URL(url)
-  Object.entries(params).forEach(([k,v]) => u.searchParams.set(k,v))
-  const r = await fetch(u.toString(), { headers: headers() })
-  if (!r.ok) throw new Error(`HTTP ${r.status}`)
-  return r.json()
+async function fetchJSON(path, params = {}) {
+  const tryHost = async (host) => {
+    const u = new URL(host + '/' + path)
+    Object.entries(params).forEach(([k,v]) => u.searchParams.set(k,v))
+    const r = await fetch(u.toString(), { headers: headers() })
+    if (!r.ok) throw new Error(`HTTP ${r.status}`)
+    return r.json()
+  }
+  try {
+    return await tryHost(API_PERSISTED)
+  } catch(e) {
+    return await tryHost(API_PERSISTED2)
+  }
 }
 
 async function fetchLive(url, params = {}) {
@@ -756,7 +764,7 @@ async function toggleDetail(id) {
 async function loadLiveMatches() {
   const container = document.getElementById('live-container')
   try {
-    const data = await fetchJSON(`${API_PERSISTED}/getLive`, { hl: 'en-US' })
+    const data = await fetchJSON('getLive', { hl: 'en-US' })
     const events = data?.data?.schedule?.events || []
     const live = events.filter(e => e.state === 'inProgress' || e.type === 'match')
 
@@ -774,7 +782,7 @@ async function loadLiveMatches() {
 
 async function loadScheduleEvents() {
   try {
-    const data = await fetchJSON(`${API_PERSISTED}/getSchedule`, { hl: 'en-US' })
+    const data = await fetchJSON('getSchedule', { hl: 'en-US' })
     const events = data?.data?.schedule?.events || []
     return events
   } catch(e) {
@@ -789,29 +797,36 @@ async function loadAll() {
   document.getElementById('upcoming-title').style.display = 'none'
   document.getElementById('recent-title').style.display = 'none'
 
-  const events = await loadScheduleEvents()
-
-  const now = new Date()
-  const live = events.filter(e => e.state === 'inProgress')
-  const upcoming = events.filter(e => e.state === 'unstarted').slice(0, 8)
-  const recent = events.filter(e => e.state === 'completed').slice(-6).reverse()
-
-  const liveContainer = document.getElementById('live-container')
-  if (live.length > 0) {
-    liveContainer.innerHTML = live.map(e => renderMatchCard(e, true)).join('')
-  } else {
-    liveContainer.innerHTML = `<div class="empty-state">No live matches right now.</div>`
+  // Live matches - getLive endpoint
+  try {
+    const liveData = await fetchJSON('getLive', { hl: 'en-US' })
+    const liveEvents = liveData?.data?.schedule?.events || []
+    const liveContainer = document.getElementById('live-container')
+    if (liveEvents.length > 0) {
+      liveContainer.innerHTML = liveEvents.map(e => renderMatchCard(e, true)).join('')
+    } else {
+      liveContainer.innerHTML = `<div class="empty-state">No live matches right now.</div>`
+    }
+  } catch(e) {
+    document.getElementById('live-container').innerHTML = `<div class="error-msg">Could not load live data: ${e.message}</div>`
   }
 
-  if (upcoming.length > 0) {
-    document.getElementById('upcoming-title').style.display = 'block'
-    document.getElementById('upcoming-container').innerHTML = upcoming.map(e => renderMatchCard(e, false, false)).join('')
-  }
+  // Schedule - upcoming and recent
+  try {
+    const schedData = await fetchJSON('getSchedule', { hl: 'en-US' })
+    const events = (schedData?.data?.schedule?.events || []).filter(e => e.type === 'match')
+    const upcoming = events.filter(e => e.state === 'unstarted').slice(0, 8)
+    const recent = events.filter(e => e.state === 'completed').slice(-6).reverse()
 
-  if (recent.length > 0) {
-    document.getElementById('recent-title').style.display = 'block'
-    document.getElementById('recent-container').innerHTML = recent.map(e => renderMatchCard(e, false, true)).join('')
-  }
+    if (upcoming.length > 0) {
+      document.getElementById('upcoming-title').style.display = 'block'
+      document.getElementById('upcoming-container').innerHTML = upcoming.map(e => renderMatchCard(e, false, false)).join('')
+    }
+    if (recent.length > 0) {
+      document.getElementById('recent-title').style.display = 'block'
+      document.getElementById('recent-container').innerHTML = recent.map(e => renderMatchCard(e, false, true)).join('')
+    }
+  } catch(e) {}
 }
 
 async function loadSchedule() {
@@ -819,7 +834,7 @@ async function loadSchedule() {
   container.innerHTML = `<div class="loading"><div class="spinner"></div> Loading...</div>`
 
   try {
-    const data = await fetchJSON(`${API_PERSISTED}/getSchedule`, { hl: 'en-US' })
+    const data = await fetchJSON('getSchedule', { hl: 'en-US' })
     const events = (data?.data?.schedule?.events || []).filter(e => e.type === 'match')
 
     if (events.length === 0) {
