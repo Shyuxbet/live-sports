@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoL Esports Live</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg:#0a0e1a; --bg2:#111827; --bg3:#1a2235;
+  --border:rgba(255,255,255,0.08); --text:#e8eaf0; --muted:#6b7280;
+  --accent:#c89b3c; --live:#ef4444; --blue:#3b82f6; --green:#10b981;
+  --radius:8px; --radius-lg:12px;
+}
+body { font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+
+header {
+  background:var(--bg2); border-bottom:1px solid var(--border);
+  padding:0 24px; display:flex; align-items:center; gap:16px;
+  height:56px; position:sticky; top:0; z-index:100;
+}
+.logo { display:flex; align-items:center; gap:10px; font-weight:700; font-size:16px; }
+.logo svg { color:var(--accent); }
+.nav-tabs { display:flex; gap:4px; margin-left:auto; }
+.nav-tab {
+  background:none; border:none; color:var(--muted); cursor:pointer;
+  padding:6px 14px; border-radius:var(--radius); font-size:13px; font-weight:500; transition:all 0.15s;
+}
+.nav-tab:hover { background:var(--bg3); color:var(--text); }
+.nav-tab.active { background:var(--bg3); color:var(--accent); }
+
+.status-dot {
+  width:8px; height:8px; border-radius:50%; background:var(--live);
+  box-shadow:0 0 8px var(--live); animation:pulse 2s infinite; display:inline-block; margin-right:6px;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+.main { max-width:1200px; margin:0 auto; padding:24px; }
+.section-title {
+  font-size:11px; font-weight:600; letter-spacing:1.5px; color:var(--muted);
+  text-transform:uppercase; margin-bottom:12px; margin-top:28px;
+}
+.section-title:first-child { margin-top:0; }
+
+.match-card {
+  background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius-lg);
+  padding:16px 20px; margin-bottom:8px; cursor:pointer;
+  transition:border-color 0.15s,background 0.15s; position:relative; overflow:hidden;
+}
+.match-card:hover { border-color:rgba(255,255,255,0.18); background:var(--bg3); }
+.match-card.live-card { border-color:rgba(239,68,68,0.25); }
+.match-card.live-card:hover { border-color:rgba(239,68,68,0.45); }
+.match-card::before {
+  content:''; position:absolute; left:0; top:0; bottom:0;
+  width:3px; border-radius:3px 0 0 3px; background:transparent;
+}
+.match-card.live-card::before { background:var(--live); }
+
+.match-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+.league-badge {
+  font-size:11px; font-weight:600; letter-spacing:0.8px; color:var(--accent);
+  background:rgba(200,155,60,0.1); padding:3px 8px; border-radius:4px;
+}
+.live-badge { display:flex; align-items:center; font-size:11px; font-weight:700; color:var(--live); letter-spacing:0.5px; }
+.time-badge { font-size:12px; color:var(--muted); }
+.series-info { font-size:11px; color:var(--muted); margin-top:2px; }
+
+.teams-row { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:16px; }
+.team { display:flex; align-items:center; gap:10px; }
+.team.right { flex-direction:row-reverse; text-align:right; }
+.team-icon {
+  width:36px; height:36px; border-radius:50%; background:var(--bg3); border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700;
+  color:var(--accent); flex-shrink:0; overflow:hidden;
+}
+.team-icon img { width:100%; height:100%; object-fit:contain; }
+.team-name { font-weight:700; font-size:15px; }
+.team-record { font-size:11px; color:var(--muted); }
+.score-block { text-align:center; min-width:60px; }
+.score { font-size:22px; font-weight:700; letter-spacing:2px; }
+.game-timer { font-size:12px; color:var(--green); margin-top:4px; }
+
+.detail-panel { display:none; margin-top:16px; padding-top:16px; border-top:1px solid var(--border); }
+.detail-panel.open { display:block; }
+
+/* Game tabs (Game 1 / Game 2 ...) */
+.game-tabs { display:flex; gap:6px; margin-bottom:14px; flex-wrap:wrap; }
+.game-tab {
+  background:var(--bg3); border:1px solid var(--border); border-radius:var(--radius);
+  color:var(--muted); font-size:12px; font-weight:600; padding:4px 12px;
+  cursor:pointer; transition:all 0.15s;
+}
+.game-tab:hover { color:var(--text); border-color:rgba(255,255,255,0.2); }
+.game-tab.active { color:var(--accent); border-color:var(--accent); background:rgba(200,155,60,0.08); }
+.game-tab.win { border-left:3px solid var(--green); }
+.game-tab.loss { border-left:3px solid var(--live); }
+
+.game-view { display:none; }
+.game-view.active { display:block; }
+
+/* Draft view */
+.draft-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:16px;
+}
+.draft-side-title {
+  font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase;
+  margin-bottom:10px; padding-bottom:6px; border-bottom:1px solid var(--border);
+}
+.draft-row {
+  display:flex; align-items:center; gap:8px;
+  padding:5px 0; border-bottom:1px solid rgba(255,255,255,0.04);
+}
+.draft-row:last-child { border-bottom:none; }
+.champ-icon {
+  width:32px; height:32px; border-radius:4px; background:var(--bg3); overflow:hidden; flex-shrink:0;
+}
+.champ-icon img { width:100%; height:100%; object-fit:cover; }
+.champ-name { font-size:13px; font-weight:500; flex:1; }
+.player-name-sm { font-size:11px; color:var(--muted); }
+.role-icon { font-size:10px; color:var(--muted); min-width:48px; }
+.kda-sm { font-size:12px; color:var(--muted); text-align:right; font-variant-numeric:tabular-nums; }
+.kda-sm span { color:var(--text); }
+
+/* Scoreboard stats */
+.stat-row { display:grid; grid-template-columns:1fr 80px 1fr; gap:4px; align-items:center; margin-bottom:8px; }
+.stat-bar-wrap { display:flex; align-items:center; gap:6px; }
+.stat-bar-fill-l { height:4px; border-radius:2px; background:var(--blue); flex:1; }
+.stat-bar-fill-r { height:4px; border-radius:2px; background:var(--live); flex:1; }
+.stat-label-sm { font-size:10px; color:var(--muted); text-align:center; letter-spacing:0.5px; }
+.stat-val { font-size:13px; font-weight:600; }
+.stat-val.left { text-align:right; }
+.stat-val.right { text-align:left; }
+
+/* Items row */
+.items-strip { display:flex; gap:3px; margin-top:3px; }
+.item-sm { width:20px; height:20px; border-radius:3px; background:var(--bg); border:1px solid var(--border); overflow:hidden; }
+.item-sm img { width:100%; height:100%; object-fit:cover; }
+.item-empty { width:20px; height:20px; border-radius:3px; background:var(--bg); border:1px solid var(--border); opacity:0.25; }
+
+.bar-group { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
+.stat-bar { margin-bottom:4px; }
+.stat-label { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-bottom:3px; }
+.bar-track { height:4px; background:var(--bg3); border-radius:2px; overflow:hidden; }
+.bar-fill { height:100%; border-radius:2px; }
+
+.loading { display:flex; align-items:center; gap:8px; padding:28px; color:var(--muted); font-size:14px; justify-content:center; }
+.spinner { width:16px; height:16px; border:2px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin 0.7s linear infinite; }
+@keyframes spin { to{transform:rotate(360deg)} }
+.error-msg { background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.2); border-radius:var(--radius); padding:12px 16px; font-size:13px; color:#f87171; margin:8px 0; }
+
+.refresh-btn {
+  background:none; border:1px solid var(--border); color:var(--muted); cursor:pointer;
+  padding:5px 12px; border-radius:var(--radius); font-size:12px; margin-left:auto;
+  display:flex; align-items:center; gap:6px; transition:all 0.15s;
+}
+.refresh-btn:hover { border-color:rgba(255,255,255,0.2); color:var(--text); }
+.header-row { display:flex; align-items:center; margin-bottom:12px; }
+.patch-badge { font-size:11px; color:var(--muted); background:var(--bg3); padding:3px 8px; border-radius:4px; margin-left:8px; }
+.empty-state { padding:24px; text-align:center; color:var(--muted); font-size:14px; background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius-lg); }
+.tab-content { display:none; }
+.tab-content.active { display:block; }
+
+.schedule-item {
+  background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius-lg);
+  padding:14px 20px; margin-bottom:8px; display:grid;
+  grid-template-columns:1fr auto 1fr auto; align-items:center; gap:16px; font-size:14px;
+}
+.schedule-time { text-align:right; font-size:12px; color:var(--muted); min-width:80px; }
+
+.bans-row { display:flex; gap:4px; margin-top:6px; flex-wrap:wrap; }
+.ban-icon { width:24px; height:24px; border-radius:3px; background:var(--bg3); overflow:hidden; position:relative; flex-shrink:0; }
+.ban-icon img { width:100%; height:100%; object-fit:cover; filter:grayscale(0.6) brightness(0.6); }
+.ban-icon::after { content:'✕'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:10px; color:rgba(255,80,80,0.9); }
+
+@media(max-width:640px) {
+  .draft-grid { grid-template-columns:1fr; }
+  .teams-row { gap:8px; }
+  .team-name { font-size:13px; }
+  .main { padding:16px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    </svg>
+    LoL Esports Live
+  </div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="switchTab('live',this)">Live</button>
+    <button class="nav-tab" onclick="switchTab('schedule',this)">Schedule</button>
+  </div>
+</header>
+
+<div class="main">
+  <div id="tab-live" class="tab-content active">
+    <div class="header-row">
+      <span class="section-title" style="margin:0">Live Matches</span>
+      <span id="patch-badge" class="patch-badge" style="display:none"></span>
+      <button class="refresh-btn" onclick="loadAll()">↻ Refresh</button>
+    </div>
+    <div id="live-container"><div class="loading"><div class="spinner"></div> Loading live matches...</div></div>
+    <div class="section-title" id="upcoming-title" style="display:none">Upcoming</div>
+    <div id="upcoming-container"></div>
+    <div class="section-title" id="recent-title" style="display:none">Recent Results</div>
+    <div id="recent-container"></div>
+  </div>
+  <div id="tab-schedule" class="tab-content">
+    <div class="header-row">
+      <span class="section-title" style="margin:0">Schedule</span>
+      <button class="refresh-btn" onclick="loadSchedule()">↻ Refresh</button>
+    </div>
+    <div id="schedule-container"><div class="loading"><div class="spinner"></div> Loading...</div></div>
+  </div>
+</div>
+
+<script>
+const API_PERSISTED = "https://esports-api.lolesports.com/persisted/gw"
+const API_PERSISTED2 = "https://prod-relapi.ewp.gg/persisted/gw"
+const API_LIVE = "https://feed.lolesports.com/livestats/v1"
+const API_KEY = "0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z"
+const DDRAGON = "https://ddragon.leagueoflegends.com/cdn"
+let patchVersion = "14.10.1"
+
+function hdrs() { return { "x-api-key": API_KEY } }
+
+async function fetchJSON(path, params = {}) {
+  const tryHost = async (host) => {
+    const u = new URL(host + '/' + path)
+    Object.entries(params).forEach(([k,v]) => u.searchParams.set(k,v))
+    const r = await fetch(u.toString(), { headers: hdrs() })
+    if (!r.ok) throw new Error(`HTTP ${r.status}`)
+    return r.json()
+  }
+  try { return await tryHost(API_PERSISTED) }
+  catch(e) { return await tryHost(API_PERSISTED2) }
+}
+
+async function fetchLive(url, params = {}) {
+  const u = new URL(url)
+  Object.entries(params).forEach(([k,v]) => u.searchParams.set(k,v))
+  const r = await fetch(u.toString())
+  if (!r.ok) throw new Error(`HTTP ${r.status}`)
+  return r.json()
+}
+
+function formatTime(iso) {
+  return new Date(iso).toLocaleString('en-US', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' })
+}
+
+function champUrl(name) {
+  if (!name) return ''
+  const clean = name.replace(/['\s\.]/g,'').replace(/&/g,'')
+  // Special name mappings
+  const map = { "Wukong":"MonkeyKing","Nunu&Willump":"Nunu","Renata Glasc":"Renata" }
+  return `${DDRAGON}/${patchVersion}/img/champion/${map[name]||clean}.png`
+}
+
+function itemUrl(id) { return id ? `${DDRAGON}/${patchVersion}/img/item/${id}.png` : '' }
+
+function renderChampIcon(name, size=32, cls='champ-icon') {
+  return `<div class="${cls}" style="width:${size}px;height:${size}px">
+    <img src="${champUrl(name)}" alt="${name||''}" onerror="this.style.display='none'">
+  </div>`
+}
+
+function renderItems(items=[]) {
+  const slots = Array(7).fill(0)
+  items.forEach((id,i) => { if(i<7) slots[i]=id })
+  return `<div class="items-strip">${slots.map(id => id
+    ? `<div class="item-sm"><img src="${itemUrl(id)}" onerror="this.style.display='none'"></div>`
+    : `<div class="item-empty"></div>`
+  ).join('')}</div>`
+}
+
+function renderTeamIcon(team, size=36) {
+  const code = team?.code || (team?.name||'?').slice(0,3).toUpperCase()
+  const img = team?.image
+  return `<div class="team-icon" style="width:${size}px;height:${size}px">
+    ${img ? `<img src="${img}" alt="${code}" onerror="this.style.display='none'">` : code}
+  </div>`
+}
+
+// ─── LIVE detail (window endpoint) ────────────────────────────────────────────
+async function renderLiveDetail(panel, matchId) {
+  panel.innerHTML = `<div class="loading"><div class="spinner"></div> Loading live data...</div>`
+  try {
+    const win = await fetchLive(`${API_LIVE}/window/${matchId}`, {
+      startingTime: getISODate10s()
+    })
+    const frames = win?.frames || []
+    const last = frames[frames.length-1]
+    if (!last) { panel.innerHTML = `<div class="error-msg">No frame data yet.</div>`; return }
+
+    const blue = last.blueTeam || {}
+    const red  = last.redTeam  || {}
+    const bg = blue.totalGold||0, rg = red.totalGold||0, tg = bg+rg||1
+
+    const renderSide = (team, color) => {
+      const players = team.participants||[]
+      return players.map(p => {
+        const k=p.kills??0, d=p.deaths??0, a=p.assists??0
+        const kda = d===0?'Perfect':((k+a)/d).toFixed(2)
+        return `<div class="draft-row">
+          ${renderChampIcon(p.championId, 32)}
+          <div style="flex:1;min-width:0">
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="champ-name">${p.summonerName||'Player'}</span>
+              <span class="kda-sm"><span>${k}</span>/<span style="color:var(--live)">${d}</span>/<span>${a}</span></span>
+            </div>
+            ${renderItems(p.items)}
+          </div>
+          <div style="text-align:right;font-size:11px;color:var(--muted)">
+            <div>${p.creepScore??0} CS</div>
+            <div style="color:var(--accent)">${Math.round((p.totalGold||0)/1000)}k</div>
+          </div>
+        </div>`
+      }).join('')
+    }
+
+    panel.innerHTML = `
+      <div class="bar-group">
+        <div class="stat-bar">
+          <div class="stat-label"><span>Blue Gold</span><span style="color:var(--accent)">${Math.round(bg/1000)}k</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:${Math.round(bg/tg*100)}%;background:var(--blue)"></div></div>
+        </div>
+        <div class="stat-bar">
+          <div class="stat-label"><span>Red Gold</span><span style="color:var(--accent)">${Math.round(rg/1000)}k</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:${Math.round(rg/tg*100)}%;background:var(--live)"></div></div>
+        </div>
+      </div>
+      <div class="draft-grid">
+        <div>
+          <div class="draft-side-title" style="color:var(--blue)">Blue Side</div>
+          ${renderSide(blue,'#3b82f6')}
+        </div>
+        <div>
+          <div class="draft-side-title" style="color:var(--live)">Red Side</div>
+          ${renderSide(red,'#ef4444')}
+        </div>
+      </div>`
+  } catch(e) {
+    panel.innerHTML = `<div class="error-msg">Live data unavailable: ${e.message}</div>`
+  }
+}
+
+const matchDataCache = {}
+
+// ─── COMPLETED detail (getEventDetails + window for each game) ────────────────
+async function renderCompletedDetail(panel, matchId) {
+  panel.innerHTML = `<div class="loading"><div class="spinner"></div> Loading match details...</div>`
+  try {
+    const evData = await fetchJSON('getEventDetails', { hl:'en-US', id:matchId })
+    const ev = evData?.data?.event
+    if (!ev) { panel.innerHTML = `<div class="error-msg">No event data.</div>`; return }
+
+    const games = ev.match?.games || []
+    const teams = ev.match?.teams || []
+
+    if (games.length === 0) { panel.innerHTML = `<div class="error-msg">No game data available.</div>`; return }
+
+    // Cache for tab switching
+    matchDataCache[matchId] = { games, teams }
+
+    // Build tab bar
+    const tabsHtml = games.map((g,i) => {
+      const state = g.state  // completed / unneeded / inProgress
+      let label = `Game ${i+1}`
+      if (state === 'unneeded') label += ' -'
+      return `<button class="game-tab" id="gtab-${matchId}-${i}" onclick="showGameTab('${matchId}',${i},${games.length})">${label}</button>`
+    }).join('')
+
+    panel.innerHTML = `
+      <div class="game-tabs">${tabsHtml}</div>
+      ${games.map((_,i) => `<div class="game-view" id="gview-${matchId}-${i}">
+        <div class="loading"><div class="spinner"></div> Loading game ${i+1}...</div>
+      </div>`).join('')}
+    `
+    // Show first valid game
+    const firstIdx = games.findIndex(g => g.state !== 'unneeded')
+    showGameTab(matchId, firstIdx >= 0 ? firstIdx : 0, games.length)
+
+  } catch(e) {
+    panel.innerHTML = `<div class="error-msg">Could not load details: ${e.message}</div>`
+  }
+}
+
+async function showGameTab(matchId, idx, total) {
+  // Update active tab
+  for (let i=0; i<total; i++) {
+    const t = document.getElementById(`gtab-${matchId}-${i}`)
+    if (t) t.classList.toggle('active', i===idx)
+  }
+  const view = document.getElementById(`gview-${matchId}-${idx}`)
+  if (!view) return
+  // Already loaded?
+  if (view.dataset.loaded) { view.parentElement.querySelectorAll('.game-view').forEach(v => v.classList.remove('active')); view.classList.add('active'); return }
+
+  view.parentElement.querySelectorAll('.game-view').forEach(v => v.classList.remove('active'))
+  view.classList.add('active')
+  view.innerHTML = `<div class="loading"><div class="spinner"></div> Loading game ${idx+1}...</div>`
+
+  const cached = matchDataCache[matchId]
+  if (!cached) {
+    view.innerHTML = `<div class="error-msg">Match data not loaded. Please close and re-open this match.</div>`
+    return
+  }
+  const { games, teams } = cached
+
+  const game = games[idx]
+  if (!game || game.state === 'unneeded') {
+    view.innerHTML = `<div style="padding:16px;text-align:center;color:var(--muted);font-size:13px">This game was not played.</div>`
+    view.dataset.loaded = '1'
+    return
+  }
+
+  const gameId = game.id
+  try {
+    // Fetch window for last frame (champion + final stats)
+    const win = await fetchLive(`${API_LIVE}/window/${gameId}`)
+    const frames = win?.frames || []
+    const last = frames[frames.length-1]
+    const meta = win?.gameMetadata || {}
+
+    // Champion mappings from metadata (always available even if frames expired)
+    const blueParticipants = meta.blueTeamMetadata?.participantMetadata || []
+    const redParticipants  = meta.redTeamMetadata?.participantMetadata  || []
+
+    if (blueParticipants.length === 0 && redParticipants.length === 0) {
+      view.innerHTML = `<div style="padding:16px;text-align:center;color:var(--muted);font-size:13px">No draft/champion data available for this game.</div>`
+      view.dataset.loaded = '1'
+      return
+    }
+
+    // Stats from last frame (may be empty for older games - data expires)
+    const blueFrame = last?.blueTeam || {}
+    const redFrame  = last?.redTeam  || {}
+    const hasStats = (blueFrame.participants?.length || 0) > 0 || (redFrame.participants?.length || 0) > 0
+
+    // Team info
+    const t1 = teams?.[0] || {}
+    const t2 = teams?.[1] || {}
+    const sideColorBlue = '#3b82f6', sideColorRed = '#ef4444'
+
+    const renderSideDetailed = (frameTeam, metaPlayers, teamInfo, sideColor) => {
+      const frameParticipants = frameTeam.participants || []
+      return `
+        <div>
+          <div class="draft-side-title" style="color:${sideColor}">
+            ${renderTeamIcon(teamInfo, 18)}
+            <span style="margin-left:6px">${teamInfo?.code || teamInfo?.name || (sideColor===sideColorBlue?'Blue':'Red')}</span>
+            ${hasStats ? `<span style="font-size:10px;color:var(--muted);margin-left:8px">
+              T:${frameTeam.totalTowers??0} D:${frameTeam.totalDragons??0} B:${frameTeam.totalBarons??0}
+            </span>` : ''}
+          </div>
+          ${metaPlayers.map(meta2 => {
+            const p = frameParticipants.find(fp => fp.participantId === meta2.participantId) || {}
+            const k=p.kills, d=p.deaths, a=p.assists
+            const kdaText = hasStats ? `<span class="kda-sm"><span>${k??0}</span>/<span style="color:var(--live)">${d??0}</span>/<span>${a??0}</span></span>` : ''
+            const statsText = hasStats ? `<span style="font-size:10px;color:var(--muted)">${p.creepScore??0}cs · <span style="color:var(--accent)">${Math.round((p.totalGold||0)/1000)}k</span></span>` : ''
+            return `<div class="draft-row">
+              ${renderChampIcon(meta2.championId, 32)}
+              <div style="flex:1;min-width:0">
+                <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+                  <span class="champ-name" style="font-size:12px">${meta2.championId||'?'}</span>
+                  ${kdaText}
+                  ${statsText}
+                </div>
+                ${hasStats ? renderItems(p.items) : ''}
+                <div style="font-size:10px;color:var(--muted);margin-top:2px">${meta2.summonerName||''}</div>
+              </div>
+            </div>`
+          }).join('')}
+        </div>`
+    }
+
+    let goldBarsHtml = ''
+    if (hasStats) {
+      const blueGold = blueFrame.totalGold||0
+      const redGold  = redFrame.totalGold||0
+      const tg = blueGold+redGold||1
+      goldBarsHtml = `
+      <div class="bar-group" style="margin-top:8px">
+        <div class="stat-bar">
+          <div class="stat-label">
+            <span style="color:${sideColorBlue}">${t1.code||'Blue'}</span>
+            <span style="color:var(--accent)">${Math.round(blueGold/1000)}k gold</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width:${Math.round(blueGold/tg*100)}%;background:${sideColorBlue}"></div></div>
+        </div>
+        <div class="stat-bar">
+          <div class="stat-label">
+            <span style="color:${sideColorRed}">${t2.code||'Red'}</span>
+            <span style="color:var(--accent)">${Math.round(redGold/1000)}k gold</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width:${Math.round(redGold/tg*100)}%;background:${sideColorRed}"></div></div>
+        </div>
+      </div>`
+    } else {
+      goldBarsHtml = `<div style="font-size:11px;color:var(--muted);margin-bottom:10px;padding:6px 10px;background:var(--bg3);border-radius:var(--radius)">
+        Detailed stats (KDA, gold, CS) are no longer available for this game — showing champion picks only.
+      </div>`
+    }
+
+    view.innerHTML = `
+      ${goldBarsHtml}
+      <div class="draft-grid">
+        ${renderSideDetailed(blueFrame, blueParticipants, t1, sideColorBlue)}
+        ${renderSideDetailed(redFrame,  redParticipants,  t2, sideColorRed)}
+      </div>`
+
+    view.dataset.loaded = '1'
+
+    // Also try to get bans from getEventDetails game data
+    if (game.picks && game.picks.length > 0) {
+      appendDraftInfo(view, game, blueParticipants, redParticipants)
+    }
+
+  } catch(e) {
+    view.innerHTML = `<div class="error-msg">Could not load game data: ${e.message}</div>`
+  }
+}
+
+function appendDraftInfo(view, game, blueP, redP) {
+  const picks = game.picks || []
+  const bans  = game.bans  || []
+  if (!bans.length && !picks.length) return
+  // bans section
+  if (bans.length) {
+    const blueBans = bans.filter(b=>b.team===100)
+    const redBans  = bans.filter(b=>b.team===200)
+    const banHtml = side => side.map(b =>
+      `<div class="ban-icon">${b.championId?`<img src="${champUrl(b.championId)}" alt="${b.championId}">`:''}</div>`
+    ).join('')
+    const existing = view.querySelector('.draft-grid')
+    if (existing) {
+      const banDiv = document.createElement('div')
+      banDiv.style = 'margin-bottom:12px'
+      banDiv.innerHTML = `
+        <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">Bans</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div class="bans-row">${banHtml(blueBans)}</div>
+          <div class="bans-row">${banHtml(redBans)}</div>
+        </div>`
+      existing.before(banDiv)
+    }
+  }
+}
+
+// ─── Match card ───────────────────────────────────────────────────────────────
+function renderMatchCard(event, isLive=false) {
+  const match = event?.match
+  if (!match) return ''
+  const teams = match.teams||[]
+  const t1=teams[0]||{}, t2=teams[1]||{}
+  const s1=t1.result?.gameWins??0, s2=t2.result?.gameWins??0
+  const league=event?.league?.name||''
+  const startTime=event?.startTime?formatTime(event.startTime):''
+  const strategy=match?.strategy
+  const seriesText=strategy?.type==='bestOf'?`Best of ${strategy.count}`:''
+  const id=match?.id||event?.id||''
+  const isCompleted=event?.state==='completed'
+
+  let badge=''
+  if (isLive) badge=`<div class="live-badge"><span class="status-dot"></span>LIVE</div>`
+  else badge=`<div class="time-badge">${startTime}</div>`
+
+  return `<div class="match-card ${isLive?'live-card':''}" id="card-${id}" onclick="toggleDetail('${id}',${isLive},${isCompleted})">
+    <div class="match-top">
+      <div>
+        <span class="league-badge">${league}</span>
+        ${seriesText?`<div class="series-info">${seriesText}</div>`:''}
+      </div>
+      ${badge}
+    </div>
+    <div class="teams-row">
+      <div class="team">
+        ${renderTeamIcon(t1)}
+        <div>
+          <div class="team-name">${t1.code||t1.name||'TBD'}</div>
+          <div class="team-record">${t1.name||''}</div>
+        </div>
+      </div>
+      <div class="score-block">
+        <div class="score">${s1}<span style="color:var(--muted);font-size:16px;margin:0 4px">–</span>${s2}</div>
+        ${isLive?`<div class="game-timer">● Live</div>`:''}
+      </div>
+      <div class="team right">
+        ${renderTeamIcon(t2)}
+        <div>
+          <div class="team-name">${t2.code||t2.name||'TBD'}</div>
+          <div class="team-record">${t2.name||''}</div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-panel" id="detail-${id}"></div>
+  </div>`
+}
+
+async function toggleDetail(id, isLive, isCompleted) {
+  const panel = document.getElementById(`detail-${id}`)
+  if (!panel) return
+  if (panel.classList.contains('open')) { panel.classList.remove('open'); return }
+  panel.classList.add('open')
+
+  if (isLive) {
+    await renderLiveDetail(panel, id)
+  } else if (isCompleted) {
+    await renderCompletedDetail(panel, id)
+  } else {
+    panel.innerHTML = `<div style="padding:14px;text-align:center;color:var(--muted);font-size:13px">Match hasn't started yet.</div>`
+  }
+}
+
+// ─── Data loading ─────────────────────────────────────────────────────────────
+function getISODate10s() {
+  const d=new Date(); d.setMilliseconds(0)
+  const s=d.getSeconds(); d.setSeconds(s-(s%10)-60)
+  return d.toISOString()
+}
+
+async function loadAll() {
+  document.getElementById('live-container').innerHTML=`<div class="loading"><div class="spinner"></div> Loading...</div>`
+  document.getElementById('upcoming-container').innerHTML=''
+  document.getElementById('recent-container').innerHTML=''
+  document.getElementById('upcoming-title').style.display='none'
+  document.getElementById('recent-title').style.display='none'
+
+  // Live
+  try {
+    const ld = await fetchJSON('getLive', {hl:'en-US'})
+    const liveEvs = ld?.data?.schedule?.events||[]
+    const lc=document.getElementById('live-container')
+    lc.innerHTML = liveEvs.length ? liveEvs.map(e=>renderMatchCard(e,true)).join('') :
+      `<div class="empty-state">No live matches right now.</div>`
+  } catch(e) {
+    document.getElementById('live-container').innerHTML=`<div class="error-msg">Live data error: ${e.message}</div>`
+  }
+
+  // Schedule
+  try {
+    const sd = await fetchJSON('getSchedule', {hl:'en-US'})
+    const evs=(sd?.data?.schedule?.events||[]).filter(e=>e.type==='match')
+    const upcoming=evs.filter(e=>e.state==='unstarted').slice(0,8)
+    const recent=evs.filter(e=>e.state==='completed').slice(-6).reverse()
+    if (upcoming.length) {
+      document.getElementById('upcoming-title').style.display='block'
+      document.getElementById('upcoming-container').innerHTML=upcoming.map(e=>renderMatchCard(e,false)).join('')
+    }
+    if (recent.length) {
+      document.getElementById('recent-title').style.display='block'
+      document.getElementById('recent-container').innerHTML=recent.map(e=>renderMatchCard(e,false)).join('')
+    }
+  } catch(e){}
+}
+
+async function loadSchedule() {
+  const c=document.getElementById('schedule-container')
+  c.innerHTML=`<div class="loading"><div class="spinner"></div> Loading...</div>`
+  try {
+    const data=await fetchJSON('getSchedule',{hl:'en-US'})
+    const evs=(data?.data?.schedule?.events||[]).filter(e=>e.type==='match')
+    if (!evs.length){c.innerHTML=`<div class="empty-state">No schedule data.</div>`;return}
+    const grouped={}
+    evs.forEach(e=>{const l=e.league?.name||'Other';if(!grouped[l])grouped[l]=[];grouped[l].push(e)})
+    let html=''
+    Object.entries(grouped).forEach(([league,evts])=>{
+      html+=`<div class="section-title">${league}</div>`
+      evts.slice(0,12).forEach(e=>{
+        const m=e.match,ts=m?.teams||[],t1=ts[0]||{},t2=ts[1]||{}
+        const s1=t1.result?.gameWins??'',s2=t2.result?.gameWins??''
+        const st=e.state
+        const sc=st==='inProgress'?'var(--live)':st==='completed'?'var(--muted)':'var(--green)'
+        html+=`<div class="schedule-item" onclick="toggleDetail('${m?.id||e?.id}',false,${st==='completed'})" style="cursor:pointer">
+          <div style="font-weight:600">${t1.code||t1.name||'TBD'}</div>
+          <div style="text-align:center">${st==='completed'?`<b>${s1}–${s2}</b>`:`<span style="color:var(--muted)">vs</span>`}</div>
+          <div style="font-weight:600;text-align:right">${t2.code||t2.name||'TBD'}</div>
+          <div class="schedule-time" style="color:${sc}">${st==='inProgress'?'● LIVE':st==='completed'?'Final':formatTime(e.startTime)}</div>
+        </div>
+        <div class="detail-panel" id="detail-${m?.id||e?.id}" style="margin:-2px 0 6px;border-radius:0 0 var(--radius-lg) var(--radius-lg);background:var(--bg2);padding:0 20px;"></div>`
+      })
+    })
+    c.innerHTML=html
+  } catch(e){c.innerHTML=`<div class="error-msg">Schedule error: ${e.message}</div>`}
+}
+
+async function fetchPatchVersion() {
+  try {
+    const r=await fetch('https://ddragon.leagueoflegends.com/api/versions.json')
+    const v=await r.json()
+    if(v?.[0]){
+      patchVersion=v[0]
+      const b=document.getElementById('patch-badge')
+      b.textContent=`Patch ${v[0].split('.').slice(0,2).join('.')}`
+      b.style.display='inline-block'
+    }
+  } catch(e){}
+}
+
+function switchTab(name,btn) {
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'))
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'))
+  document.getElementById(`tab-${name}`).classList.add('active')
+  btn.classList.add('active')
+  if(name==='schedule') loadSchedule()
+}
+
+fetchPatchVersion()
+loadAll()
+setInterval(loadAll, 60000)
+</script>
+</body>
+</html>
