@@ -41,6 +41,11 @@ def get_recent_games(limit=50):
     data = resp.json()
 
     if "error" in data:
+        code = data["error"].get("code")
+        if code == "ratelimited":
+            # Gecici bir durum: bu calistirmada atla, eski results.json kalsin.
+            print("Leaguepedia rate limit'e takildi, bu calistirma atlaniyor.")
+            return None
         raise RuntimeError(f"Leaguepedia API hatasi: {data['error']}")
 
     rows = data.get("cargoquery", [])
@@ -55,6 +60,10 @@ def get_recent_games(limit=50):
 
 def main():
     games = get_recent_games()
+
+    if games is None:
+        # Rate limit nedeniyle bu calistirma atlandi, mevcut dosyaya dokunma.
+        return
 
     os.makedirs("data", exist_ok=True)
     with open("data/results.json", "w", encoding="utf-8") as f:
