@@ -39,7 +39,18 @@ def get_recent_games(limit=50):
     resp = requests.get(API_URL, params=params, headers=HEADERS, timeout=30)
     resp.raise_for_status()
     data = resp.json()
-    return [row["title"] for row in data.get("cargoquery", [])]
+
+    if "error" in data:
+        raise RuntimeError(f"Leaguepedia API hatasi: {data['error']}")
+
+    rows = data.get("cargoquery", [])
+
+    if not rows:
+        # Bos donduyse, ham yaniti gorelim ki sebebi anlayalim.
+        print("Leaguepedia bos sonuc dondurdu. Ham yanit (ilk 1000 karakter):")
+        print(json.dumps(data, ensure_ascii=False)[:1000])
+
+    return [row["title"] for row in rows]
 
 
 def main():
