@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Espor Takip</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">‖</span>
+    <span class="brand-name">ESPOR<strong>TAKİP</strong></span>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="schedule" role="tab" aria-selected="true">Maç Takvimi</button>
+    <button class="tab" data-tab="results" role="tab" aria-selected="false">Sonuçlar</button>
+    <button class="tab" data-tab="stats" role="tab" aria-selected="false">İstatistikler</button>
+  </nav>
+  <div class="updated" id="updated-at">—</div>
+</header>
+
+<main>
+
+  <!-- MAÇ TAKVİMİ -->
+  <section class="panel active" id="panel-schedule">
+    <div class="panel-head">
+      <h1>Maç Takvimi</h1>
+      <p class="sub">LoLEsports — yaklaşan ve canlı karşılaşmalar</p>
+    </div>
+    <div class="grid" id="schedule-grid">
+      <p class="empty">Veri yükleniyor…</p>
+    </div>
+  </section>
+
+  <!-- SONUÇLAR -->
+  <section class="panel" id="panel-results">
+    <div class="panel-head">
+      <h1>Sonuçlar</h1>
+      <p class="sub">Leaguepedia — son tamamlanan maçlar</p>
+    </div>
+    <div class="table-wrap">
+      <table id="results-table">
+        <thead>
+          <tr>
+            <th>Tarih (UTC)</th>
+            <th>Turnuva</th>
+            <th class="team-col">Takım 1</th>
+            <th class="score-col">Skor</th>
+            <th class="team-col">Takım 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="5" class="empty">Veri yükleniyor…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- İSTATİSTİKLER -->
+  <section class="panel" id="panel-stats">
+    <div class="panel-head">
+      <h1>Oyuncu İstatistikleri</h1>
+      <p class="sub">Oracle's Elixir — ortalama performans verileri</p>
+    </div>
+    <div class="table-wrap">
+      <table id="stats-table">
+        <thead>
+          <tr>
+            <th class="team-col">Oyuncu</th>
+            <th>Maç</th>
+            <th>Ort. Kill</th>
+            <th>Ort. Death</th>
+            <th>Ort. Assist</th>
+            <th>KDA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="6" class="empty">Veri yükleniyor… (henüz veri yoksa README'deki OE_CSV_URL adımına bak)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Veriler GitHub Actions ile periyodik olarak güncellenir · Kaynaklar: LoLEsports unofficial API · Leaguepedia · Oracle's Elixir
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

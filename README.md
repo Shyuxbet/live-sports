@@ -1,126 +1,78 @@
-# Shyuxbet - LoL Esports Canlı Skor &amp; Takvim
+# Espor Takip — GitHub Pages
 
-PHP tabanlı, [LoL Esports API](https://esports-api.lolesports.com) verilerini kullanan
-canlı maç takip, maç istatistikleri ve takvim sitesi.
+LoLEsports, Leaguepedia ve Oracle's Elixir verilerini periyodik olarak çekip
+statik bir sitede gösteren basit bir proje.
 
-## Özellikler
-
-- **Canlı ve oynanmış maçlar** anasayfada listelenir, canlı bölüm her 30 saniyede
-  otomatik yenilenir.
-- **Maç detay sayfası**: takım bazlı toplam altın / altın farkı, Baron Nashor ve
-  Ejder sayıları, kule/engel sayıları, oyuncu bazlı KDA, CS, hasar, item ve
-  rün ikonları, şampiyon seçimleri (pick).
-  > Not: LoL Esports'un herkese açık (public) API'si **draft/ban verisi sunmamaktadır**,
-  > bu nedenle "yasaklı şampiyon" bölümü gösterilemez. Bu, API'nin bir kısıtıdır.
-- **Takvim**: aylık takvim görünümü. Admin girişi yapıldığında her maçın yanında
-  ★ butonu çıkar; tıklanınca maç "önemli" olarak işaretlenir ve yeşil renkte
-  vurgulanır (anasayfada ve takvimde).
-- **Header**: ortalanmış sosyal medya ikonları (Discord, Facebook, Twitter/X,
-  Instagram, YouTube, Twitch) — her biri admin panelinden tek tek açılıp
-  kapatılabilir, link adresleri girilebilir.
-- **Admin paneli**: header'ın sol üst köşesinde küçük bir "Ayarlar" (dişli)
-  butonu ile erişilir. Varsayılan şifre **1234**'tür, panelden değiştirilebilir.
-- **Footer**: telif hakkı (copyright) yazısı + kaynak bilgisi.
-
-## Klasör Yapısı
+## Nasıl çalışır?
 
 ```
-shyuxbet/
-├── index.php              # Canlı + oynanmış maçlar
-├── match.php               # Maç detay / istatistik sayfası
-├── schedule.php             # Aylık takvim
-├── includes/
-│   ├── config.php          # Genel ayarlar / oturum
-│   ├── api.php              # LoL Esports API PHP istemcisi
-│   ├── functions.php        # Yardımcı fonksiyonlar, ayarlar okuma/yazma
-│   ├── header.php / footer.php
-│   └── partial_live.php     # Canlı maç kartları (AJAX ile tekrar kullanılır)
-├── ajax/
-│   ├── live.php             # Canlı maçları yeniden çeker (JSON)
-│   └── toggle_important.php # Önemli maç işaretleme (admin)
-├── admin/
-│   ├── login.php
-│   ├── index.php            # Admin paneli
-│   ├── save_settings.php
-│   └── logout.php
-├── assets/
-│   ├── css/style.css
-│   └── js/script.js
-└── data/
-    ├── settings.json        # Şifre, sosyal medya, önemli maçlar
-    └── cache/                # API cache dosyaları (otomatik oluşur)
+GitHub Actions (her 30 dakikada bir + manuel tetikleme)
+  ├─ scripts/fetch_lolesports.py    → data/schedule.json
+  ├─ scripts/fetch_leaguepedia.py   → data/results.json
+  └─ scripts/fetch_oracles_elixir.py → data/stats.json
+        ↓ (git commit + push)
+GitHub Pages (index.html + style.css + app.js)
+  → bu JSON dosyalarını fetch() ile okuyup gösterir
 ```
 
-## Gereksinimler
-
-- PHP **7.4+** (PHP 8.x önerilir)
-- `curl` PHP eklentisi (çoğu hosting'de varsayılan olarak açıktır)
-- Yazma izni: `data/` ve `data/cache/` klasörleri PHP tarafından
-  yazılabilir olmalıdır (ayarları ve cache'i saklamak için).
+Tarayıcıdan bu API'lere direkt istek atmak CORS hatası verdiği / API key
+istediği için, veriler önce Actions üzerinde Python ile çekiliyor ve repo'ya
+JSON olarak commit'leniyor. Site sadece kendi repo'sundaki statik dosyaları
+okuyor — bu yüzden CORS sorunu yaşanmıyor.
 
 ## Kurulum
 
-1. Bu klasörün tüm içeriğini bir PHP destekli sunucuya (Apache/Nginx + PHP-FPM
-   veya paylaşımlı hosting) yükleyin. `public_html` veya `www` kök dizinine
-   koymanız yeterlidir.
-2. `data/` klasörüne yazma izni verin:
-   ```bash
-   chmod -R 775 data
-   ```
-3. Siteyi tarayıcıda açın. `data/settings.json` dosyası otomatik oluşturulacaktır
-   (eğer yoksa).
-4. Header'ın sol üstündeki **"Ayarlar"** ikonuna tıklayıp `1234` şifresiyle
-   giriş yapın. Şifreyi, sosyal medya bağlantılarını ve site başlığını
-   buradan yönetebilirsiniz.
+1. Bu klasördeki tüm dosyaları GitHub repo'na yükle (kök dizine).
+2. **Settings → Pages** üzerinden GitHub Pages'i `main` branch / kök dizin
+   olarak aç.
+3. **Settings → Actions → General** altında "Workflow permissions"ı
+   **"Read and write permissions"** yap (Actions'ın `data/*.json`
+   dosylarını commit edebilmesi için gerekli).
+4. (Opsiyonel ama önerilir) Oracle's Elixir istatistiklerinin çalışması için:
+   - https://oracleselixir.com/tools/downloads adresinden güncel CSV
+     indirme linkini al (genelde bir Google Sheets/Drive linki).
+   - **Settings → Secrets and variables → Actions → Variables** sekmesinden
+     `OE_CSV_URL` adında bir repository variable oluştur ve linki yapıştır.
+   - Bu değişken tanımlı değilse `data/stats.json` boş kalır, site bunu
+     belirtir, diğer sekmeler normal çalışır.
+5. **Actions** sekmesinden "Update Esports Data" workflow'unu bir kere
+   manuel çalıştır (`Run workflow`) — ilk JSON dosyaları böylece üretilir.
 
-## GitHub'a Yükleme
+## Takip edilen ligler
 
-```bash
-cd shyuxbet
-git init
-git add .
-git commit -m "Shyuxbet LoL Esports sitesi"
-git branch -M main
-git remote add origin https://github.com/KULLANICI_ADIN/REPO_ADI.git
-git push -u origin main
+`scripts/fetch_lolesports.py` içindeki `WANTED_LEAGUES` setini düzenleyerek
+hangi liglerin (LCK, LEC, LPL, MSI, Worlds, vb.) takvime dahil olacağını
+değiştirebilirsin. Tam liga adları için `get_leagues()` fonksiyonunun
+döndürdüğü listeye bakabilirsin (örnek bir script ile loglayıp kontrol
+edebilirsin).
+
+## Sınırlamalar / notlar
+
+- LoLEsports API'si **resmi değildir**, herkesin kullandığı sabit bir
+  public API key ile çalışır. Anthropic/Riot bunu değiştirirse
+  `scripts/fetch_lolesports.py` güncellenmesi gerekebilir.
+- Leaguepedia Cargo API'sine yapılan isteklerde nazik bir `User-Agent`
+  ve makul bir `limit` kullanılıyor; çok sık/ağır sorgu göndermekten
+  kaçın (Fandom kuralları).
+- Oracle's Elixir CSV linki periyodik olarak değişir; site bozulursa
+  ilk kontrol edilecek yer `OE_CSV_URL` değişkenidir.
+- Cron zamanlamaları GitHub Actions'ta garanti değildir, yoğun saatlerde
+  gecikme olabilir.
+
+## Dosya yapısı
+
 ```
-
-> `data/cache/*` dosyaları `.gitignore` ile hariç tutulmuştur; `data/settings.json`
-> deponuza dahil edilir (varsayılan şifre `1234` ile). Canlıya almadan önce
-> şifrenizi değiştirmeniz önerilir.
-
-## API Hakkında
-
-`includes/api.php`, sağladığınız `LoLEsportsAPI.ts` dosyasındaki tüm
-endpoint'lerin PHP karşılığıdır:
-
-| TS Fonksiyonu              | PHP Karşılığı                          | Açıklama |
-|----------------------------|------------------------------------------|----------|
-| `getScheduleResponse`       | `LoLEsportsAPI::getSchedule()`            | Maç takvimi |
-| `getWindowResponse`         | `LoLEsportsAPI::getWindow($gameId)`       | Canlı takım istatistikleri (altın, baron, ejder, kule...) |
-| `getGameDetailsResponse`    | `LoLEsportsAPI::getDetails($gameId)`      | Oyuncu bazlı detaylar (item, hasar, rün, CS...) |
-| `getEventDetailsResponse`   | `LoLEsportsAPI::getEventDetails($id)`     | Maç/etkinlik bilgisi |
-| `getStandingsResponse`      | `LoLEsportsAPI::getStandings($id)`        | Turnuva puan durumu |
-| `getDataDragonResponse`     | `LoLEsportsAPI::getDataDragonJSON(...)`   | Item/rün statik verisi |
-| `getFormattedPatchVersion`   | `LoLEsportsAPI::formatPatchVersion(...)`  | Patch sürüm biçimleme |
-
-Tüm istekler basit dosya tabanlı cache ile yapılır (`data/cache/`), bu sayede
-hem API limitlerine yaklaşılmaz hem de sayfa yüklemeleri hızlanır. Canlı
-istatistik endpoint'leri (`/window`, `/details`) cache'lenmez; her zaman
-güncel veriyi gösterirler.
-
-## Sık Sorulan Sorular
-
-**Takvimde / anasayfada hiç maç görünmüyor?**
-LoL Esports public API'si genelde sadece yaklaşık ±1-2 haftalık veri döner.
-Şu anda aktif bir turnuva yoksa liste boş olabilir.
-
-**Baron/Ejder sayıları veya altın farkı görünmüyor?**
-Bu veriler sadece maç **canlı yayınlandığı veya oynandığı** sırada/sonrasında
-`livestats` API'sinden gelir. Maç henüz başlamadıysa veya veri sağlayıcı
-tarafında gecikme varsa boş gelebilir.
-
-**Favicon / logo'yu nasıl değiştiririm?**
-`includes/header.php` içindeki `<link rel="icon" ...>` ve `.logo-icon`
-`<img>` etiketlerindeki URL'yi kendi logonuzla (örn. `assets/img/logo.png`)
-değiştirin.
+.
+├── .github/workflows/update-data.yml   # Otomatik veri güncelleme job'ı
+├── scripts/
+│   ├── fetch_lolesports.py
+│   ├── fetch_leaguepedia.py
+│   └── fetch_oracles_elixir.py
+├── data/
+│   ├── schedule.json
+│   ├── results.json
+│   └── stats.json
+├── index.html
+├── style.css
+└── app.js
+```
