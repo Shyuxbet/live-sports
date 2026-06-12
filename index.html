@@ -30,10 +30,28 @@
   <section class="panel active" id="panel-schedule">
     <div class="panel-head">
       <h1>Maç Takvimi</h1>
-      <p class="sub">LoLEsports — yaklaşan ve canlı karşılaşmalar</p>
+      <p class="sub">LoLEsports — canlı, yaklaşan ve tamamlanan karşılaşmalar</p>
     </div>
-    <div class="grid" id="schedule-grid">
-      <p class="empty">Veri yükleniyor…</p>
+
+    <div class="sub-section">
+      <h2 class="sub-heading live-heading"><span class="live-dot"></span>Canlı</h2>
+      <div class="grid" id="grid-live">
+        <p class="empty">Şu an canlı maç yok.</p>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h2 class="sub-heading">Yaklaşan</h2>
+      <div class="grid" id="grid-upcoming">
+        <p class="empty">Yaklaşan maç bulunamadı.</p>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h2 class="sub-heading">Tamamlanan</h2>
+      <div class="grid" id="grid-completed">
+        <p class="empty">Tamamlanan maç bulunamadı.</p>
+      </div>
     </div>
   </section>
 
@@ -41,23 +59,10 @@
   <section class="panel" id="panel-results">
     <div class="panel-head">
       <h1>Sonuçlar</h1>
-      <p class="sub">Leaguepedia — son tamamlanan maçlar</p>
+      <p class="sub">Leaguepedia — son tamamlanan maçlar. Detay için bir maça tıkla.</p>
     </div>
-    <div class="table-wrap">
-      <table id="results-table">
-        <thead>
-          <tr>
-            <th>Tarih (UTC)</th>
-            <th>Turnuva</th>
-            <th class="team-col">Takım 1</th>
-            <th class="score-col">Skor</th>
-            <th class="team-col">Takım 2</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td colspan="5" class="empty">Veri yükleniyor…</td></tr>
-        </tbody>
-      </table>
+    <div class="results-list" id="results-list">
+      <p class="empty">Veri yükleniyor…</p>
     </div>
   </section>
 
