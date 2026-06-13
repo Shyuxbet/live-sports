@@ -1742,26 +1742,26 @@
     },
     {
       "startTime": "2026-06-13T06:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Knockouts",
       "league": "LCK",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "kt Rolster",
-          "code": "KT",
-          "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Gen.G Esports",
           "code": "GEN",
           "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 3
+          }
+        },
+        {
+          "name": "kt Rolster",
+          "code": "KT",
+          "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1773,7 +1773,7 @@
     },
     {
       "startTime": "2026-06-13T09:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Playoffs",
       "league": "LPL",
       "leagueIcon": null,
@@ -1784,7 +1784,7 @@
           "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
           "result": {
             "outcome": null,
-            "gameWins": 0
+            "gameWins": 1
           }
         },
         {
@@ -1810,10 +1810,13 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Gen.G Esports",
+          "code": "GEN",
+          "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
           "name": "T1",
