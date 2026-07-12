@@ -1225,8 +1225,8 @@
           "code": "BLG",
           "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
           "result": {
-            "outcome": null,
-            "gameWins": 1
+            "outcome": "loss",
+            "gameWins": 2
           }
         },
         {
@@ -1234,8 +1234,8 @@
           "code": "HLE",
           "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
           "result": {
-            "outcome": null,
-            "gameWins": 1
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
