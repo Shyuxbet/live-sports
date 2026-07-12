@@ -1215,7 +1215,7 @@
     },
     {
       "startTime": "2026-07-12T06:00:00Z",
-      "state": "inProgress",
+      "state": "completed",
       "blockName": "Finals",
       "league": "MSI",
       "leagueIcon": null,
