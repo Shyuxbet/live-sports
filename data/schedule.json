@@ -1462,7 +1462,7 @@
       }
     },
     {
-      "startTime": "2026-07-24T14:00:00Z",
+      "startTime": "2026-07-24T14:30:00Z",
       "state": "unstarted",
       "blockName": "Week 1",
       "league": "LEC",
@@ -1493,7 +1493,7 @@
       }
     },
     {
-      "startTime": "2026-07-24T17:00:00Z",
+      "startTime": "2026-07-24T17:30:00Z",
       "state": "unstarted",
       "blockName": "Week 1",
       "league": "LEC",
@@ -1617,7 +1617,7 @@
       }
     },
     {
-      "startTime": "2026-07-25T14:00:00Z",
+      "startTime": "2026-07-25T14:30:00Z",
       "state": "unstarted",
       "blockName": "Week 1",
       "league": "LEC",
@@ -1648,7 +1648,7 @@
       }
     },
     {
-      "startTime": "2026-07-25T17:00:00Z",
+      "startTime": "2026-07-25T17:30:00Z",
       "state": "unstarted",
       "blockName": "Week 1",
       "league": "LEC",
@@ -1772,7 +1772,7 @@
       }
     },
     {
-      "startTime": "2026-07-26T14:00:00Z",
+      "startTime": "2026-07-26T14:30:00Z",
       "state": "unstarted",
       "blockName": "Week 1",
       "league": "LEC",
@@ -1803,7 +1803,7 @@
       }
     },
     {
-      "startTime": "2026-07-26T17:00:00Z",
+      "startTime": "2026-07-26T17:30:00Z",
       "state": "unstarted",
       "blockName": "Week 1",
       "league": "LEC",
