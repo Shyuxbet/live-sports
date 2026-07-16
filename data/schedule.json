@@ -1469,18 +1469,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "G2 Esports",
-          "code": "G2",
-          "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "name": "G2 Esports",
+          "code": "G2",
+          "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -1655,18 +1655,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Karmine Corp",
-          "code": "KC",
-          "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "name": "Karmine Corp",
+          "code": "KC",
+          "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -1779,18 +1779,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "name": "Team Vitality",
+          "code": "VIT",
+          "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "Team Vitality",
-          "code": "VIT",
-          "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -1810,18 +1810,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "G2 Esports",
-          "code": "G2",
-          "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+          "name": "Karmine Corp",
+          "code": "KC",
+          "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "Karmine Corp",
-          "code": "KC",
-          "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+          "name": "G2 Esports",
+          "code": "G2",
+          "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -1996,18 +1996,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "DN SOOPers",
-          "code": "DNS",
-          "image": "http://static.lolesports.com/teams/1767340467921_DN_SOOPerslogo_profile.webp",
+          "name": "BNK FEARX",
+          "code": "BFX",
+          "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "BNK FEARX",
-          "code": "BFX",
-          "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
+          "name": "DN SOOPers",
+          "code": "DNS",
+          "image": "http://static.lolesports.com/teams/1767340467921_DN_SOOPerslogo_profile.webp",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -2244,18 +2244,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Team Vitality",
-          "code": "VIT",
-          "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+          "name": "Team Heretics",
+          "code": "TH",
+          "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "Team Heretics",
-          "code": "TH",
-          "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+          "name": "Team Vitality",
+          "code": "VIT",
+          "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -2275,18 +2275,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "name": "Shifters",
+          "code": "SHFT",
+          "image": "http://static.lolesports.com/teams/1765897071435_600px-Shifters_allmode.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "Shifters",
-          "code": "SHFT",
-          "image": "http://static.lolesports.com/teams/1765897071435_600px-Shifters_allmode.png",
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
           "result": {
             "outcome": null,
             "gameWins": 0
