@@ -96,52 +96,52 @@
     "kda":3.31
   },
   {
+    "playername":"Caliste",
+    "games":116,
+    "avg_kills":4.72,
+    "avg_deaths":2.03,
+    "avg_assists":5.61,
+    "kda":5.08
+  },
+  {
+    "playername":"Yike",
+    "games":116,
+    "avg_kills":4.26,
+    "avg_deaths":3.03,
+    "avg_assists":6.78,
+    "kda":3.64
+  },
+  {
+    "playername":"kyeahoo",
+    "games":116,
+    "avg_kills":3.09,
+    "avg_deaths":2.42,
+    "avg_assists":6.78,
+    "kda":4.07
+  },
+  {
+    "playername":"Busio",
+    "games":116,
+    "avg_kills":0.99,
+    "avg_deaths":3.04,
+    "avg_assists":10.72,
+    "kda":3.85
+  },
+  {
+    "playername":"Canna",
+    "games":116,
+    "avg_kills":2.97,
+    "avg_deaths":2.62,
+    "avg_assists":5.37,
+    "kda":3.18
+  },
+  {
     "playername":"Smash",
     "games":115,
     "avg_kills":4.61,
     "avg_deaths":2.27,
     "avg_assists":5.29,
     "kda":4.36
-  },
-  {
-    "playername":"Career",
-    "games":115,
-    "avg_kills":0.93,
-    "avg_deaths":2.52,
-    "avg_assists":10.03,
-    "kda":4.35
-  },
-  {
-    "playername":"kyeahoo",
-    "games":115,
-    "avg_kills":3.1,
-    "avg_deaths":2.43,
-    "avg_assists":6.77,
-    "kda":4.05
-  },
-  {
-    "playername":"Yike",
-    "games":115,
-    "avg_kills":4.23,
-    "avg_deaths":3.05,
-    "avg_assists":6.8,
-    "kda":3.62
-  },
-  {
-    "playername":"Canna",
-    "games":115,
-    "avg_kills":2.97,
-    "avg_deaths":2.63,
-    "avg_assists":5.37,
-    "kda":3.17
-  },
-  {
-    "playername":"Caliste",
-    "games":115,
-    "avg_kills":4.74,
-    "avg_deaths":2.04,
-    "avg_assists":5.58,
-    "kda":5.05
   },
   {
     "playername":"ShowMaker",
@@ -152,12 +152,12 @@
     "kda":3.53
   },
   {
-    "playername":"Busio",
+    "playername":"Career",
     "games":115,
-    "avg_kills":0.98,
-    "avg_deaths":3.05,
-    "avg_assists":10.7,
-    "kda":3.83
+    "avg_kills":0.93,
+    "avg_deaths":2.52,
+    "avg_assists":10.03,
+    "kda":4.35
   },
   {
     "playername":"Siwoo",
