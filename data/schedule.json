@@ -1,40 +1,9 @@
 {
   "updated": {
-    "older": "b2xkZXI6OjExNTU0ODY4MTgwMzQwNjE5MQ==",
-    "newer": "bmV3ZXI6OjExNjU2Njg1NDU0Nzc2OTY2OA=="
+    "older": "b2xkZXI6OjExNTU0ODY4MTgwMzQwNjI4Nw==",
+    "newer": "bmV3ZXI6OjExNjU2Njg1NDU0NzgzNTM0OA=="
   },
   "events": [
-    {
-      "startTime": "2026-07-26T14:30:00Z",
-      "state": "completed",
-      "blockName": "Week 1",
-      "league": "LEC",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "Team Vitality",
-          "code": "VIT",
-          "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        },
-        {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 1
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
     {
       "startTime": "2026-07-26T17:30:00Z",
       "state": "completed",
@@ -1246,7 +1215,7 @@
     },
     {
       "startTime": "2026-08-05T08:00:00Z",
-      "state": "unstarted",
+      "state": "inProgress",
       "blockName": "Week 11",
       "league": "LCK",
       "leagueIcon": null,
@@ -1277,7 +1246,7 @@
     },
     {
       "startTime": "2026-08-05T09:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 3",
       "league": "LPL",
       "leagueIcon": null,
@@ -1339,7 +1308,7 @@
     },
     {
       "startTime": "2026-08-05T11:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 3",
       "league": "LPL",
       "leagueIcon": null,
@@ -2470,6 +2439,37 @@
           "name": "Beijing JDG Esports",
           "code": "JDG",
           "image": "http://static.lolesports.com/teams/1627457924722_29.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 3
+      }
+    },
+    {
+      "startTime": "2026-08-13T07:00:00Z",
+      "state": "unstarted",
+      "blockName": "Week 4",
+      "league": "LPL",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "WeiboGaming",
+          "code": "WBG",
+          "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "Shenzhen NINJAS IN PYJAMAS",
+          "code": "NIP",
+          "image": "http://static.lolesports.com/teams/1673425724696_NIP-Symbol-RGB-NeonYellow1.png",
           "result": {
             "outcome": null,
             "gameWins": 0
