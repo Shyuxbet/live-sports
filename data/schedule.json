@@ -1246,7 +1246,7 @@
     },
     {
       "startTime": "2026-08-06T07:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 3",
       "league": "LPL",
       "leagueIcon": null,
@@ -1339,7 +1339,7 @@
     },
     {
       "startTime": "2026-08-06T09:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 3",
       "league": "LPL",
       "leagueIcon": null,
@@ -1401,7 +1401,7 @@
     },
     {
       "startTime": "2026-08-06T11:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 3",
       "league": "LPL",
       "leagueIcon": null,
