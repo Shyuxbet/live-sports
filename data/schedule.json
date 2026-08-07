@@ -1,195 +1,9 @@
 {
   "updated": {
-    "older": "b2xkZXI6OjExNTU0ODE0NzkwMDU1MzQ2MQ==",
-    "newer": "bmV3ZXI6OjExNjU2Njg1NDU0Nzc2OTY5Ng=="
+    "older": "b2xkZXI6OjExNTU0ODE0NzkwMDU1MzQ1Mw==",
+    "newer": "bmV3ZXI6OjExNjc2OTcyNTM4OTQwNDE3Mw=="
   },
   "events": [
-    {
-      "startTime": "2026-07-29T10:00:00Z",
-      "state": "completed",
-      "blockName": "Week 10",
-      "league": "LCK",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "T1",
-          "code": "T1",
-          "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 0
-          }
-        },
-        {
-          "name": "kt Rolster",
-          "code": "KT",
-          "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
-    {
-      "startTime": "2026-07-29T11:00:00Z",
-      "state": "completed",
-      "blockName": "Week 2",
-      "league": "LPL",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "LGD GAMING",
-          "code": "LGD",
-          "image": "http://static.lolesports.com/teams/LGD-FullonDark-1.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 1
-          }
-        },
-        {
-          "name": "BILIBILI GAMING",
-          "code": "BLG",
-          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
-    {
-      "startTime": "2026-07-30T07:00:00Z",
-      "state": "completed",
-      "blockName": "Week 2",
-      "league": "LPL",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "Shenzhen NINJAS IN PYJAMAS",
-          "code": "NIP",
-          "image": "http://static.lolesports.com/teams/1673425724696_NIP-Symbol-RGB-NeonYellow1.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        },
-        {
-          "name": "WeiboGaming",
-          "code": "WBG",
-          "image": "http://static.lolesports.com/teams/1641202879910_3.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 0
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
-    {
-      "startTime": "2026-07-30T08:00:00Z",
-      "state": "completed",
-      "blockName": "Week 10",
-      "league": "LCK",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "BNK FEARX",
-          "code": "BFX",
-          "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        },
-        {
-          "name": "DN SOOPers",
-          "code": "DNS",
-          "image": "http://static.lolesports.com/teams/1767340467921_DN_SOOPerslogo_profile.webp",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 0
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
-    {
-      "startTime": "2026-07-30T09:00:00Z",
-      "state": "completed",
-      "blockName": "Swiss",
-      "league": "LCP",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "DetonatioN FocusMe",
-          "code": "DFM",
-          "image": "http://static.lolesports.com/teams/1673415140442_dfm.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        },
-        {
-          "name": "Fukuoka SoftBank HAWKS gaming",
-          "code": "SHG",
-          "image": "http://static.lolesports.com/teams/1725885083108_SHG_White_Main.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 1
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
-    {
-      "startTime": "2026-07-30T09:00:00Z",
-      "state": "completed",
-      "blockName": "Week 2",
-      "league": "LPL",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "EDWARD GAMING",
-          "code": "EDG",
-          "image": "http://static.lolesports.com/teams/1631819297476_edg-2021-worlds.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 0
-          }
-        },
-        {
-          "name": "Xi'an Team WE",
-          "code": "WE",
-          "image": "http://static.lolesports.com/teams/1634763008788_220px-Team_WE_logo.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
     {
       "startTime": "2026-07-30T10:00:00Z",
       "state": "completed",
@@ -1256,8 +1070,8 @@
           "code": "LGD",
           "image": "http://static.lolesports.com/teams/LGD-FullonDark-1.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
           }
         },
         {
@@ -1265,8 +1079,8 @@
           "code": "TT",
           "image": "http://static.lolesports.com/teams/TT-FullonDark.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 2
           }
         }
       ],
@@ -1277,7 +1091,7 @@
     },
     {
       "startTime": "2026-08-06T08:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 11",
       "league": "LCK",
       "leagueIcon": null,
@@ -1287,8 +1101,8 @@
           "code": "KRX",
           "image": "http://static.lolesports.com/teams/1774247803537_horizontal_EN_Wh.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 2
           }
         },
         {
@@ -1296,7 +1110,7 @@
           "code": "DNS",
           "image": "http://static.lolesports.com/teams/1767340467921_DN_SOOPerslogo_profile.webp",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1308,26 +1122,26 @@
     },
     {
       "startTime": "2026-08-06T09:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "LCP",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Fukuoka SoftBank HAWKS gaming",
-          "code": "SHG",
-          "image": "http://static.lolesports.com/teams/1725885083108_SHG_White_Main.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Ground Zero Gaming",
           "code": "GZ",
           "image": "http://static.lolesports.com/teams/1766395585595_LCP_TEAMLogo_GZ_Full_B.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 3
+          }
+        },
+        {
+          "name": "Fukuoka SoftBank HAWKS gaming",
+          "code": "SHG",
+          "image": "http://static.lolesports.com/teams/1725885083108_SHG_White_Main.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1349,8 +1163,8 @@
           "code": "IG",
           "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
           }
         },
         {
@@ -1358,8 +1172,8 @@
           "code": "NIP",
           "image": "http://static.lolesports.com/teams/1673425724696_NIP-Symbol-RGB-NeonYellow1.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 2
           }
         }
       ],
@@ -1370,26 +1184,26 @@
     },
     {
       "startTime": "2026-08-06T10:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 11",
       "league": "LCK",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Dplus KIA",
-          "code": "DK",
-          "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "T1",
           "code": "T1",
           "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 2
+          }
+        },
+        {
+          "name": "Dplus KIA",
+          "code": "DK",
+          "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1411,8 +1225,8 @@
           "code": "WE",
           "image": "http://static.lolesports.com/teams/1634763008788_220px-Team_WE_logo.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 2
           }
         },
         {
@@ -1420,7 +1234,7 @@
           "code": "AL",
           "image": "http://static.lolesports.com/teams/1641199582689_.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1996,15 +1810,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
-        },
-        {
           "name": "CTBC Flying Oyster",
           "code": "CFO",
           "image": "http://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "Ground Zero Gaming",
+          "code": "GZ",
+          "image": "http://static.lolesports.com/teams/1766395585595_LCP_TEAMLogo_GZ_Full_B.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -2473,6 +2290,186 @@
       "strategy": {
         "type": "bestOf",
         "count": 3
+      }
+    },
+    {
+      "startTime": "2026-08-13T10:00:00Z",
+      "state": "unstarted",
+      "blockName": "Week 12",
+      "league": "LCK",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "Gen.G Esports",
+          "code": "GEN",
+          "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "Hanwha Life Esports",
+          "code": "HLE",
+          "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 3
+      }
+    },
+    {
+      "startTime": "2026-08-13T11:00:00Z",
+      "state": "unstarted",
+      "blockName": "Week 4",
+      "league": "LPL",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "BILIBILI GAMING",
+          "code": "BLG",
+          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "THUNDER TALK GAMING",
+          "code": "TT",
+          "image": "http://static.lolesports.com/teams/TT-FullonDark.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 3
+      }
+    },
+    {
+      "startTime": "2026-08-14T07:00:00Z",
+      "state": "unstarted",
+      "blockName": "Week 4",
+      "league": "LPL",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "EDWARD GAMING",
+          "code": "EDG",
+          "image": "http://static.lolesports.com/teams/1631819297476_edg-2021-worlds.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "LGD GAMING",
+          "code": "LGD",
+          "image": "http://static.lolesports.com/teams/LGD-FullonDark-1.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 3
+      }
+    },
+    {
+      "startTime": "2026-08-14T08:00:00Z",
+      "state": "unstarted",
+      "blockName": "Week 12",
+      "league": "LCK",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "T1",
+          "code": "T1",
+          "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "Dplus KIA",
+          "code": "DK",
+          "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 3
+      }
+    },
+    {
+      "startTime": "2026-08-14T09:00:00Z",
+      "state": "unstarted",
+      "blockName": "Week 4",
+      "league": "LPL",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "Xi'an Team WE",
+          "code": "WE",
+          "image": "http://static.lolesports.com/teams/1634763008788_220px-Team_WE_logo.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "TOP ESPORTS",
+          "code": "TES",
+          "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 3
+      }
+    },
+    {
+      "startTime": "2026-08-14T09:00:00Z",
+      "state": "unstarted",
+      "blockName": "Play-Ins",
+      "league": "LCP",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        },
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 5
       }
     }
   ]
