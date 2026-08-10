@@ -1500,16 +1500,22 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "GAM Esports",
+          "code": "GAM",
+          "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Relove Deep Cross Gaming",
+          "code": "DCG",
+          "image": "http://static.lolesports.com/teams/1785400397160_LCP_DCG_Full_W1.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -1711,16 +1717,22 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "CTBC Flying Oyster",
+          "code": "CFO",
+          "image": "http://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "MVK Esports",
+          "code": "MVK",
+          "image": "http://static.lolesports.com/teams/1767089709161_White_Logo.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -1953,16 +1965,22 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Ground Zero Gaming",
+          "code": "GZ",
+          "image": "http://static.lolesports.com/teams/1766395585595_LCP_TEAMLogo_GZ_Full_B.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "DetonatioN FocusMe",
+          "code": "DFM",
+          "image": "http://static.lolesports.com/teams/1673415140442_dfm.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -2201,10 +2219,13 @@
           "result": null
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Team Secret Whales",
+          "code": "TSW",
+          "image": "http://static.lolesports.com/teams/1774598000328_White_EyeText_600p.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
