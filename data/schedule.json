@@ -1,40 +1,9 @@
 {
   "updated": {
-    "older": "b2xkZXI6OjExNjU2Njg1NDU0Nzc2OTY2MA==",
+    "older": "b2xkZXI6OjExNTU0ODY4MTgwMzQwNjI1NQ==",
     "newer": "bmV3ZXI6OjExNTYxNjMxMDEyNTg5MDI4MQ=="
   },
   "events": [
-    {
-      "startTime": "2026-08-15T11:00:00Z",
-      "state": "completed",
-      "blockName": "Week 4",
-      "league": "LPL",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "BILIBILI GAMING",
-          "code": "BLG",
-          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        },
-        {
-          "name": "Xi'an Team WE",
-          "code": "WE",
-          "image": "http://static.lolesports.com/teams/1634763008788_220px-Team_WE_logo.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 0
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
     {
       "startTime": "2026-08-15T15:00:00Z",
       "state": "completed",
@@ -1235,7 +1204,7 @@
           "image": "http://static.lolesports.com/teams/LGD-FullonDark-1.png",
           "result": {
             "outcome": null,
-            "gameWins": 0
+            "gameWins": 1
           }
         }
       ],
@@ -1243,6 +1212,15 @@
         "type": "bestOf",
         "count": 3
       }
+    },
+    {
+      "startTime": "2026-08-23T07:34:32.710Z",
+      "state": "inProgress",
+      "blockName": null,
+      "league": "LCK",
+      "leagueIcon": "http://static.lolesports.com/leagues/lck-color-on-black.png",
+      "teams": [],
+      "strategy": {}
     },
     {
       "startTime": "2026-08-23T08:00:00Z",
