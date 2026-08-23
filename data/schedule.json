@@ -1,40 +1,9 @@
 {
   "updated": {
-    "older": "b2xkZXI6OjExNTU0ODE0NzkwMDc1MDIzMw==",
-    "newer": "bmV3ZXI6OjExNTYxNjMxMDEyNTgyNDczMw=="
+    "older": "b2xkZXI6OjExNjU2Njg1NDU0Nzc2OTY2MA==",
+    "newer": "bmV3ZXI6OjExNTYxNjMxMDEyNTg5MDI4MQ=="
   },
   "events": [
-    {
-      "startTime": "2026-08-15T10:00:00Z",
-      "state": "completed",
-      "blockName": "Week 12",
-      "league": "LCK",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "BNK FEARX",
-          "code": "BFX",
-          "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 0
-          }
-        },
-        {
-          "name": "DN SOOPers",
-          "code": "DNS",
-          "image": "http://static.lolesports.com/teams/1767340467921_DN_SOOPerslogo_profile.webp",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
     {
       "startTime": "2026-08-15T11:00:00Z",
       "state": "completed",
@@ -1246,7 +1215,7 @@
     },
     {
       "startTime": "2026-08-23T07:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 5",
       "league": "LPL",
       "leagueIcon": null,
@@ -1308,7 +1277,7 @@
     },
     {
       "startTime": "2026-08-23T09:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 5",
       "league": "LPL",
       "leagueIcon": null,
@@ -1401,7 +1370,7 @@
     },
     {
       "startTime": "2026-08-23T11:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 5",
       "league": "LPL",
       "leagueIcon": null,
@@ -2326,6 +2295,31 @@
     },
     {
       "startTime": "2026-09-06T09:00:00Z",
+      "state": "unstarted",
+      "blockName": "Playoffs",
+      "league": "LPL",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        },
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 5
+      }
+    },
+    {
+      "startTime": "2026-09-07T09:00:00Z",
       "state": "unstarted",
       "blockName": "Playoffs",
       "league": "LPL",
