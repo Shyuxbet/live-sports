@@ -1277,27 +1277,27 @@
     },
     {
       "startTime": "2026-08-26T08:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Play-Ins",
       "league": "LCK",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "kt Rolster",
-          "code": "KT",
-          "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "HANJIN BRION",
           "code": "BRO",
           "image": "http://static.lolesports.com/teams/1716454325887_Nowyprojekt.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 2
+          }
+        },
+        {
+          "name": "kt Rolster",
+          "code": "KT",
+          "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
@@ -1382,10 +1382,13 @@
           "result": null
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "HANJIN BRION",
+          "code": "BRO",
+          "image": "http://static.lolesports.com/teams/1716454325887_Nowyprojekt.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -1531,13 +1534,10 @@
           "result": null
         },
         {
-          "name": "T1",
-          "code": "T1",
-          "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
         }
       ],
       "strategy": {
@@ -1652,13 +1652,10 @@
           "result": null
         },
         {
-          "name": "Dplus KIA",
-          "code": "DK",
-          "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
         }
       ],
       "strategy": {
@@ -1832,13 +1829,10 @@
           "result": null
         },
         {
-          "name": "Gen.G Esports",
-          "code": "GEN",
-          "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
         }
       ],
       "strategy": {
@@ -1860,13 +1854,10 @@
           "result": null
         },
         {
-          "name": "Hanwha Life Esports",
-          "code": "HLE",
-          "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
         }
       ],
       "strategy": {
