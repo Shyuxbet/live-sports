@@ -1308,27 +1308,27 @@
     },
     {
       "startTime": "2026-08-27T08:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Play-Ins",
       "league": "LCK",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "NONGSHIM RED FORCE",
-          "code": "NS",
-          "image": "http://static.lolesports.com/teams/NSFullonDark.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "BNK FEARX",
           "code": "BFX",
           "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
+          }
+        },
+        {
+          "name": "NONGSHIM RED FORCE",
+          "code": "NS",
+          "image": "http://static.lolesports.com/teams/NSFullonDark.png",
+          "result": {
+            "outcome": "loss",
+            "gameWins": 1
           }
         }
       ],
@@ -1376,15 +1376,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
-        },
-        {
           "name": "HANJIN BRION",
           "code": "BRO",
           "image": "http://static.lolesports.com/teams/1716454325887_Nowyprojekt.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "BNK FEARX",
+          "code": "BFX",
+          "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
           "result": {
             "outcome": null,
             "gameWins": 0
