@@ -1339,7 +1339,7 @@
     },
     {
       "startTime": "2026-08-28T06:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Play In Knockouts",
       "league": "LPL",
       "leagueIcon": null,
@@ -1349,7 +1349,7 @@
           "code": "EDG",
           "image": "http://static.lolesports.com/teams/1631819297476_edg-2021-worlds.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         },
@@ -1358,8 +1358,8 @@
           "code": "NIP",
           "image": "http://static.lolesports.com/teams/1673425724696_NIP-Symbol-RGB-NeonYellow1.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
@@ -1370,27 +1370,27 @@
     },
     {
       "startTime": "2026-08-28T08:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Play-Ins",
       "league": "LCK",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "HANJIN BRION",
-          "code": "BRO",
-          "image": "http://static.lolesports.com/teams/1716454325887_Nowyprojekt.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "BNK FEARX",
           "code": "BFX",
           "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
+          }
+        },
+        {
+          "name": "HANJIN BRION",
+          "code": "BRO",
+          "image": "http://static.lolesports.com/teams/1716454325887_Nowyprojekt.png",
+          "result": {
+            "outcome": "loss",
+            "gameWins": 2
           }
         }
       ],
@@ -1401,7 +1401,7 @@
     },
     {
       "startTime": "2026-08-28T09:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Play In Knockouts",
       "league": "LPL",
       "leagueIcon": null,
@@ -1411,7 +1411,7 @@
           "code": "TT",
           "image": "http://static.lolesports.com/teams/TT-FullonDark.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         },
@@ -1420,8 +1420,8 @@
           "code": "IG",
           "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
@@ -1432,7 +1432,7 @@
     },
     {
       "startTime": "2026-08-28T15:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 6",
       "league": "LEC",
       "leagueIcon": null,
@@ -1442,7 +1442,7 @@
           "code": "TH",
           "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         },
@@ -1451,8 +1451,8 @@
           "code": "SHFT",
           "image": "http://static.lolesports.com/teams/1765897071435_600px-Shifters_allmode.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 2
           }
         }
       ],
@@ -1463,27 +1463,27 @@
     },
     {
       "startTime": "2026-08-28T17:15:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 6",
       "league": "LEC",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Team Vitality",
-          "code": "VIT",
-          "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Fnatic",
           "code": "FNC",
           "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
+          }
+        },
+        {
+          "name": "Team Vitality",
+          "code": "VIT",
+          "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 2
           }
         }
       ],
@@ -1494,27 +1494,27 @@
     },
     {
       "startTime": "2026-08-29T08:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Playoffs",
       "league": "LCP",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "CTBC Flying Oyster",
-          "code": "CFO",
-          "image": "http://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "MVK Esports",
           "code": "MVK",
           "image": "http://static.lolesports.com/teams/1767089709161_White_Logo.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
+          }
+        },
+        {
+          "name": "CTBC Flying Oyster",
+          "code": "CFO",
+          "image": "http://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
@@ -1525,22 +1525,28 @@
     },
     {
       "startTime": "2026-08-29T08:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Playoffs",
       "league": "LCK",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "BNK FEARX",
+          "code": "BFX",
+          "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
+          "result": {
+            "outcome": "loss",
+            "gameWins": 2
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "T1",
+          "code": "T1",
+          "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 3
+          }
         }
       ],
       "strategy": {
@@ -1550,7 +1556,7 @@
     },
     {
       "startTime": "2026-08-29T09:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Playoffs",
       "league": "LPL",
       "leagueIcon": null,
@@ -1560,8 +1566,8 @@
           "code": "TES",
           "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 2
           }
         },
         {
@@ -1569,8 +1575,8 @@
           "code": "LGD",
           "image": "http://static.lolesports.com/teams/LGD-FullonDark-1.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
@@ -1581,26 +1587,26 @@
     },
     {
       "startTime": "2026-08-29T15:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 6",
       "league": "LEC",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "SK Gaming",
-          "code": "SK",
-          "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Karmine Corp",
           "code": "KC",
           "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 2
+          }
+        },
+        {
+          "name": "SK Gaming",
+          "code": "SK",
+          "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1612,27 +1618,27 @@
     },
     {
       "startTime": "2026-08-29T17:15:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Week 6",
       "league": "LEC",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Natus Vincere",
-          "code": "NAVI",
-          "image": "http://static.lolesports.com/teams/1752746833620_NAVI_FullColor.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "GIANTX",
           "code": "GX",
           "image": "http://static.lolesports.com/teams/1765897105091_GIANTX-logotype-white.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
+          }
+        },
+        {
+          "name": "Natus Vincere",
+          "code": "NAVI",
+          "image": "http://static.lolesports.com/teams/1752746833620_NAVI_FullColor.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 2
           }
         }
       ],
@@ -1649,16 +1655,22 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Dplus KIA",
+          "code": "DK",
+          "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "kt Rolster",
+          "code": "KT",
+          "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -1674,15 +1686,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
-        },
-        {
           "name": "Team Secret Whales",
           "code": "TSW",
           "image": "http://static.lolesports.com/teams/1774598000328_White_EyeText_600p.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "CTBC Flying Oyster",
+          "code": "CFO",
+          "image": "http://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -1832,10 +1847,13 @@
           "result": null
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Gen.G Esports",
+          "code": "GEN",
+          "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -1857,10 +1875,13 @@
           "result": null
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Hanwha Life Esports",
+          "code": "HLE",
+          "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -1882,10 +1903,13 @@
           "result": null
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "BNK FEARX",
+          "code": "BFX",
+          "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -1954,10 +1978,13 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "LGD GAMING",
+          "code": "LGD",
+          "image": "http://static.lolesports.com/teams/LGD-FullonDark-1.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
           "name": "Anyone's Legend",
@@ -1982,16 +2009,22 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "TOP ESPORTS",
+          "code": "TES",
+          "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Shenzhen NINJAS IN PYJAMAS",
+          "code": "NIP",
+          "image": "http://static.lolesports.com/teams/1673425724696_NIP-Symbol-RGB-NeonYellow1.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -2038,10 +2071,13 @@
           "result": null
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Invictus Gaming",
+          "code": "IG",
+          "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
