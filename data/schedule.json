@@ -1711,7 +1711,7 @@
     },
     {
       "startTime": "2026-09-04T08:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Playoffs",
       "league": "LCK",
       "leagueIcon": null,
@@ -1721,8 +1721,8 @@
           "code": "KT",
           "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
           }
         },
         {
@@ -1730,8 +1730,8 @@
           "code": "DK",
           "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
@@ -1742,7 +1742,7 @@
     },
     {
       "startTime": "2026-09-04T09:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Playoffs",
       "league": "LPL",
       "leagueIcon": null,
@@ -1752,8 +1752,8 @@
           "code": "LGD",
           "image": "http://static.lolesports.com/teams/LGD-FullonDark-1.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
           }
         },
         {
@@ -1761,8 +1761,8 @@
           "code": "AL",
           "image": "http://static.lolesports.com/teams/1641199582689_.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
@@ -1962,10 +1962,13 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Dplus KIA",
+          "code": "DK",
+          "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
           "name": "T1",
@@ -1996,10 +1999,13 @@
           "result": null
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "LGD GAMING",
+          "code": "LGD",
+          "image": "http://static.lolesports.com/teams/LGD-FullonDark-1.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -2040,15 +2046,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
-        },
-        {
           "name": "BILIBILI GAMING",
           "code": "BLG",
           "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "Anyone's Legend",
+          "code": "AL",
+          "image": "http://static.lolesports.com/teams/1641199582689_.png",
           "result": {
             "outcome": null,
             "gameWins": 0
