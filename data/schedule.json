@@ -2393,7 +2393,7 @@
     },
     {
       "startTime": "2026-09-19T09:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Regional Qualifier",
       "league": "LPL",
       "leagueIcon": null,
@@ -2403,8 +2403,8 @@
           "code": "JDG",
           "image": "http://static.lolesports.com/teams/1627457924722_29.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
           }
         },
         {
@@ -2412,8 +2412,8 @@
           "code": "IG",
           "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
@@ -2424,27 +2424,27 @@
     },
     {
       "startTime": "2026-09-19T15:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Playoffs",
       "league": "LEC",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Karmine Corp",
           "code": "KC",
           "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
+          }
+        },
+        {
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 3
           }
         }
       ],
@@ -2461,10 +2461,13 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
           "name": "G2 Esports",
