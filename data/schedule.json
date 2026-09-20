@@ -2455,26 +2455,26 @@
     },
     {
       "startTime": "2026-09-20T15:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Finals",
       "league": "LEC",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "G2 Esports",
           "code": "G2",
           "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 3
+          }
+        },
+        {
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
