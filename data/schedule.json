@@ -1252,18 +1252,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "FURIA",
-          "code": "FUR",
-          "image": "http://static.lolesports.com/teams/FURIA---black.png",
+          "name": "Cloud9 Kia",
+          "code": "C9",
+          "image": "http://static.lolesports.com/teams/1736924120254_C9Kia_IconBlue_Transparent_2000x2000.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "MVK Esports",
-          "code": "MVK",
-          "image": "http://static.lolesports.com/teams/1767089709161_White_Logo.png",
+          "name": "Karmine Corp",
+          "code": "KC",
+          "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -1283,18 +1283,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Cloud9 Kia",
-          "code": "C9",
-          "image": "http://static.lolesports.com/teams/1736924120254_C9Kia_IconBlue_Transparent_2000x2000.png",
+          "name": "FURIA",
+          "code": "FUR",
+          "image": "http://static.lolesports.com/teams/FURIA---black.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "Karmine Corp",
-          "code": "KC",
-          "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+          "name": "MVK Esports",
+          "code": "MVK",
+          "image": "http://static.lolesports.com/teams/1767089709161_White_Logo.png",
           "result": {
             "outcome": null,
             "gameWins": 0
