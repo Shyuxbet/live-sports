@@ -1,133 +1,9 @@
 {
   "updated": {
-    "older": "b2xkZXI6OjExNzAzMDc1MjY0NDg0MTU4OQ==",
-    "newer": "bmV3ZXI6OjExNTY2MDU0MDcyNjA5NTEwMw=="
+    "older": "b2xkZXI6OjExNzAzMDc1MjY0NDg0MTU5NQ==",
+    "newer": "bmV3ZXI6OjExNTY2MDU0MDcyNjA5NTEyNw=="
   },
   "events": [
-    {
-      "startTime": "2026-08-29T08:00:00Z",
-      "state": "completed",
-      "blockName": "Playoffs",
-      "league": "LCK",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "BNK FEARX",
-          "code": "BFX",
-          "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 2
-          }
-        },
-        {
-          "name": "T1",
-          "code": "T1",
-          "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 3
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 5
-      }
-    },
-    {
-      "startTime": "2026-08-29T09:00:00Z",
-      "state": "completed",
-      "blockName": "Playoffs",
-      "league": "LPL",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "TOP ESPORTS",
-          "code": "TES",
-          "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 2
-          }
-        },
-        {
-          "name": "LGD GAMING",
-          "code": "LGD",
-          "image": "http://static.lolesports.com/teams/LGD-FullonDark-1.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 3
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 5
-      }
-    },
-    {
-      "startTime": "2026-08-29T15:00:00Z",
-      "state": "completed",
-      "blockName": "Week 6",
-      "league": "LEC",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "Karmine Corp",
-          "code": "KC",
-          "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        },
-        {
-          "name": "SK Gaming",
-          "code": "SK",
-          "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 0
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
-    {
-      "startTime": "2026-08-29T17:15:00Z",
-      "state": "completed",
-      "blockName": "Week 6",
-      "league": "LEC",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "GIANTX",
-          "code": "GX",
-          "image": "http://static.lolesports.com/teams/1765897105091_GIANTX-logotype-white.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 1
-          }
-        },
-        {
-          "name": "Natus Vincere",
-          "code": "NAVI",
-          "image": "http://static.lolesports.com/teams/1752746833620_NAVI_FullColor.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 2
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 3
-      }
-    },
     {
       "startTime": "2026-08-30T08:00:00Z",
       "state": "completed",
@@ -1215,7 +1091,7 @@
     },
     {
       "startTime": "2026-10-15T18:00:00Z",
-      "state": "inProgress",
+      "state": "completed",
       "blockName": "Play-Ins",
       "league": "Worlds",
       "leagueIcon": null,
@@ -1225,8 +1101,8 @@
           "code": "KC",
           "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
           "result": {
-            "outcome": null,
-            "gameWins": 2
+            "outcome": "win",
+            "gameWins": 3
           }
         },
         {
@@ -1234,7 +1110,7 @@
           "code": "C9",
           "image": "http://static.lolesports.com/teams/1736924120254_C9Kia_IconBlue_Transparent_2000x2000.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 2
           }
         }
@@ -1246,26 +1122,26 @@
     },
     {
       "startTime": "2026-10-15T23:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Play-Ins",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "FURIA",
-          "code": "FUR",
-          "image": "http://static.lolesports.com/teams/FURIA---black.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "MVK Esports",
           "code": "MVK",
           "image": "http://static.lolesports.com/teams/1767089709161_White_Logo.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 3
+          }
+        },
+        {
+          "name": "FURIA",
+          "code": "FUR",
+          "image": "http://static.lolesports.com/teams/FURIA---black.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1277,22 +1153,28 @@
     },
     {
       "startTime": "2026-10-16T18:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Play-Ins",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Karmine Corp",
+          "code": "KC",
+          "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 3
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "MVK Esports",
+          "code": "MVK",
+          "image": "http://static.lolesports.com/teams/1767089709161_White_Logo.png",
+          "result": {
+            "outcome": "loss",
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -1302,22 +1184,28 @@
     },
     {
       "startTime": "2026-10-16T23:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Play-Ins",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "FURIA",
+          "code": "FUR",
+          "image": "http://static.lolesports.com/teams/FURIA---black.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 3
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Cloud9 Kia",
+          "code": "C9",
+          "image": "http://static.lolesports.com/teams/1736924120254_C9Kia_IconBlue_Transparent_2000x2000.png",
+          "result": {
+            "outcome": "loss",
+            "gameWins": 1
+          }
         }
       ],
       "strategy": {
@@ -1327,22 +1215,28 @@
     },
     {
       "startTime": "2026-10-17T18:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Play-Ins",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "MVK Esports",
+          "code": "MVK",
+          "image": "http://static.lolesports.com/teams/1767089709161_White_Logo.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 3
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "FURIA",
+          "code": "FUR",
+          "image": "http://static.lolesports.com/teams/FURIA---black.png",
+          "result": {
+            "outcome": "loss",
+            "gameWins": 1
+          }
         }
       ],
       "strategy": {
@@ -1358,16 +1252,22 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Karmine Corp",
+          "code": "KC",
+          "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "MVK Esports",
+          "code": "MVK",
+          "image": "http://static.lolesports.com/teams/1767089709161_White_Logo.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
@@ -2229,6 +2129,106 @@
       "startTime": "2026-11-04T22:00:00Z",
       "state": "unstarted",
       "blockName": "Quarterfinals",
+      "league": "Worlds",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        },
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 5
+      }
+    },
+    {
+      "startTime": "2026-11-05T22:00:00Z",
+      "state": "unstarted",
+      "blockName": "Quarterfinals",
+      "league": "Worlds",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        },
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 5
+      }
+    },
+    {
+      "startTime": "2026-11-06T22:00:00Z",
+      "state": "unstarted",
+      "blockName": "Quarterfinals",
+      "league": "Worlds",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        },
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 5
+      }
+    },
+    {
+      "startTime": "2026-11-07T22:00:00Z",
+      "state": "unstarted",
+      "blockName": "Semifinals",
+      "league": "Worlds",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        },
+        {
+          "name": "TBD",
+          "code": "TBD",
+          "image": "https://static.lolesports.com/teams/team-tbd.png",
+          "result": null
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 5
+      }
+    },
+    {
+      "startTime": "2026-11-08T22:00:00Z",
+      "state": "unstarted",
+      "blockName": "Semifinals",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
