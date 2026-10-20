@@ -1283,18 +1283,18 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Team Liquid Alienware",
-          "code": "TLAW",
-          "image": "http://static.lolesports.com/teams/1769357207762_TLAlienware_Minimal_Bug-White.png",
+          "name": "Hanwha Life Esports",
+          "code": "HLE",
+          "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "CTBC Flying Oyster",
-          "code": "CFO",
-          "image": "http://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
+          "name": "TOP ESPORTS",
+          "code": "TES",
+          "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -1308,6 +1308,37 @@
     },
     {
       "startTime": "2026-10-23T19:00:00Z",
+      "state": "unstarted",
+      "blockName": "Swiss",
+      "league": "Worlds",
+      "leagueIcon": null,
+      "teams": [
+        {
+          "name": "BILIBILI GAMING",
+          "code": "BLG",
+          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        },
+        {
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
+        }
+      ],
+      "strategy": {
+        "type": "bestOf",
+        "count": 1
+      }
+    },
+    {
+      "startTime": "2026-10-23T20:00:00Z",
       "state": "unstarted",
       "blockName": "Swiss",
       "league": "Worlds",
@@ -1338,7 +1369,7 @@
       }
     },
     {
-      "startTime": "2026-10-23T20:00:00Z",
+      "startTime": "2026-10-23T21:00:00Z",
       "state": "unstarted",
       "blockName": "Swiss",
       "league": "Worlds",
@@ -1369,25 +1400,25 @@
       }
     },
     {
-      "startTime": "2026-10-23T21:00:00Z",
+      "startTime": "2026-10-23T22:00:00Z",
       "state": "unstarted",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Hanwha Life Esports",
-          "code": "HLE",
-          "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+          "name": "Team Liquid Alienware",
+          "code": "TLAW",
+          "image": "http://static.lolesports.com/teams/1769357207762_TLAlienware_Minimal_Bug-White.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "TOP ESPORTS",
-          "code": "TES",
-          "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+          "name": "CTBC Flying Oyster",
+          "code": "CFO",
+          "image": "http://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
           "result": {
             "outcome": null,
             "gameWins": 0
@@ -1400,7 +1431,7 @@
       }
     },
     {
-      "startTime": "2026-10-23T22:00:00Z",
+      "startTime": "2026-10-23T23:00:00Z",
       "state": "unstarted",
       "blockName": "Swiss",
       "league": "Worlds",
@@ -1431,7 +1462,7 @@
       }
     },
     {
-      "startTime": "2026-10-23T23:00:00Z",
+      "startTime": "2026-10-24T00:00:00Z",
       "state": "unstarted",
       "blockName": "Swiss",
       "league": "Worlds",
@@ -1450,37 +1481,6 @@
           "name": "LYON",
           "code": "LYON",
           "image": "http://static.lolesports.com/teams/1743717443673_isotypelyon-03.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 1
-      }
-    },
-    {
-      "startTime": "2026-10-24T00:00:00Z",
-      "state": "unstarted",
-      "blockName": "Swiss",
-      "league": "Worlds",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "BILIBILI GAMING",
-          "code": "BLG",
-          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
           "result": {
             "outcome": null,
             "gameWins": 0
