@@ -608,35 +608,43 @@
     "kda":4.41
   },
   {
+    "playername":"Chovy",
+    "games":129,
+    "avg_kills":4.27,
+    "avg_deaths":2.04,
+    "avg_assists":7.01,
+    "kda":5.53
+  },
+  {
     "playername":"Ruler",
-    "games":128,
+    "games":129,
     "avg_kills":5.02,
     "avg_deaths":2.24,
-    "avg_assists":6.44,
-    "kda":5.11
+    "avg_assists":6.48,
+    "kda":5.13
   },
   {
-    "playername":"Chovy",
-    "games":128,
-    "avg_kills":4.24,
-    "avg_deaths":2.05,
-    "avg_assists":6.99,
-    "kda":5.49
+    "playername":"Canyon",
+    "games":129,
+    "avg_kills":3.53,
+    "avg_deaths":2.39,
+    "avg_assists":8.72,
+    "kda":5.13
   },
   {
-    "playername":"Effort",
-    "games":128,
-    "avg_kills":0.73,
-    "avg_deaths":3.14,
-    "avg_assists":10.32,
-    "kda":3.52
+    "playername":"Kiin",
+    "games":129,
+    "avg_kills":3.52,
+    "avg_deaths":2.57,
+    "avg_assists":6.59,
+    "kda":3.93
   },
   {
     "playername":"Duro",
-    "games":128,
-    "avg_kills":0.9,
+    "games":129,
+    "avg_kills":0.89,
     "avg_deaths":2.55,
-    "avg_assists":11.89,
+    "avg_assists":11.92,
     "kda":5.02
   },
   {
@@ -648,20 +656,20 @@
     "kda":3.18
   },
   {
-    "playername":"Kiin",
+    "playername":"Effort",
     "games":128,
-    "avg_kills":3.54,
-    "avg_deaths":2.57,
-    "avg_assists":6.55,
-    "kda":3.93
+    "avg_kills":0.73,
+    "avg_deaths":3.14,
+    "avg_assists":10.32,
+    "kda":3.52
   },
   {
-    "playername":"Canyon",
-    "games":128,
-    "avg_kills":3.49,
-    "avg_deaths":2.4,
-    "avg_assists":8.71,
-    "kda":5.09
+    "playername":"Wei",
+    "games":127,
+    "avg_kills":3.35,
+    "avg_deaths":3.26,
+    "avg_assists":7.38,
+    "kda":3.29
   },
   {
     "playername":"Teddy",
@@ -678,14 +686,6 @@
     "avg_deaths":3.33,
     "avg_assists":8.87,
     "kda":2.93
-  },
-  {
-    "playername":"Wei",
-    "games":126,
-    "avg_kills":3.38,
-    "avg_deaths":3.26,
-    "avg_assists":7.37,
-    "kda":3.3
   },
   {
     "playername":"GIDEON",

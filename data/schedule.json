@@ -1246,27 +1246,27 @@
     },
     {
       "startTime": "2026-10-23T17:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Gen.G Esports",
-          "code": "GEN",
-          "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Invictus Gaming",
           "code": "IG",
           "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
+          }
+        },
+        {
+          "name": "Gen.G Esports",
+          "code": "GEN",
+          "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 1
           }
         }
       ],
@@ -1277,27 +1277,27 @@
     },
     {
       "startTime": "2026-10-23T18:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Hanwha Life Esports",
-          "code": "HLE",
-          "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "TOP ESPORTS",
           "code": "TES",
           "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
+          }
+        },
+        {
+          "name": "Hanwha Life Esports",
+          "code": "HLE",
+          "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+          "result": {
+            "outcome": "win",
+            "gameWins": 1
           }
         }
       ],
@@ -1308,26 +1308,26 @@
     },
     {
       "startTime": "2026-10-23T19:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "BILIBILI GAMING",
-          "code": "BLG",
-          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Movistar KOI",
           "code": "MKOI",
           "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 1
+          }
+        },
+        {
+          "name": "BILIBILI GAMING",
+          "code": "BLG",
+          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1339,26 +1339,26 @@
     },
     {
       "startTime": "2026-10-23T20:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Anyone's Legend",
-          "code": "AL",
-          "image": "http://static.lolesports.com/teams/1641199582689_.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Karmine Corp",
           "code": "KC",
           "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 1
+          }
+        },
+        {
+          "name": "Anyone's Legend",
+          "code": "AL",
+          "image": "http://static.lolesports.com/teams/1641199582689_.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1370,26 +1370,26 @@
     },
     {
       "startTime": "2026-10-23T21:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "G2 Esports",
-          "code": "G2",
-          "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Dplus KIA",
           "code": "DK",
           "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 1
+          }
+        },
+        {
+          "name": "G2 Esports",
+          "code": "G2",
+          "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1401,7 +1401,7 @@
     },
     {
       "startTime": "2026-10-23T22:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
@@ -1411,7 +1411,7 @@
           "code": "TLAW",
           "image": "http://static.lolesports.com/teams/1769357207762_TLAlienware_Minimal_Bug-White.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         },
@@ -1420,8 +1420,8 @@
           "code": "CFO",
           "image": "http://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 1
           }
         }
       ],
@@ -1432,7 +1432,7 @@
     },
     {
       "startTime": "2026-10-23T23:00:00Z",
-      "state": "unstarted",
+      "state": "inProgress",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
