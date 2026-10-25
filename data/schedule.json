@@ -1,40 +1,9 @@
 {
   "updated": {
-    "older": "b2xkZXI6OjExNjc2OTc0MjIyMDUyMDk1NQ==",
+    "older": "b2xkZXI6OjExNzE1NTQzNjM0MzIwMjE0Mg==",
     "newer": null
   },
   "events": [
-    {
-      "startTime": "2026-08-30T08:00:00Z",
-      "state": "completed",
-      "blockName": "Finals",
-      "league": "LCP",
-      "leagueIcon": null,
-      "teams": [
-        {
-          "name": "Team Secret Whales",
-          "code": "TSW",
-          "image": "http://static.lolesports.com/teams/1774598000328_White_EyeText_600p.png",
-          "result": {
-            "outcome": "win",
-            "gameWins": 3
-          }
-        },
-        {
-          "name": "CTBC Flying Oyster",
-          "code": "CFO",
-          "image": "http://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
-          "result": {
-            "outcome": "loss",
-            "gameWins": 0
-          }
-        }
-      ],
-      "strategy": {
-        "type": "bestOf",
-        "count": 5
-      }
-    },
     {
       "startTime": "2026-08-30T09:00:00Z",
       "state": "completed",
@@ -1493,6 +1462,15 @@
       }
     },
     {
+      "startTime": "2026-10-24T16:01:54.634Z",
+      "state": "inProgress",
+      "blockName": null,
+      "league": "Worlds",
+      "leagueIcon": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png",
+      "teams": [],
+      "strategy": {}
+    },
+    {
       "startTime": "2026-10-24T17:00:00Z",
       "state": "completed",
       "blockName": "Swiss",
@@ -1680,7 +1658,7 @@
     },
     {
       "startTime": "2026-10-24T23:00:00Z",
-      "state": "inProgress",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
@@ -1690,8 +1668,8 @@
           "code": "DK",
           "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 1
           }
         },
         {
@@ -1699,7 +1677,7 @@
           "code": "T1",
           "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -1711,7 +1689,7 @@
     },
     {
       "startTime": "2026-10-25T00:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
@@ -1721,7 +1699,7 @@
           "code": "TLAW",
           "image": "http://static.lolesports.com/teams/1769357207762_TLAlienware_Minimal_Bug-White.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         },
@@ -1730,8 +1708,8 @@
           "code": "BLG",
           "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 1
           }
         }
       ],
