@@ -1990,26 +1990,26 @@
     },
     {
       "startTime": "2026-10-28T20:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "T1",
           "code": "T1",
           "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 2
+          }
+        },
+        {
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -2021,7 +2021,7 @@
     },
     {
       "startTime": "2026-10-28T23:00:00Z",
-      "state": "unstarted",
+      "state": "inProgress",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
@@ -2041,7 +2041,7 @@
           "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
           "result": {
             "outcome": null,
-            "gameWins": 0
+            "gameWins": 1
           }
         }
       ],
