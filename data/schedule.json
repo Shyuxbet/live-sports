@@ -2021,7 +2021,7 @@
     },
     {
       "startTime": "2026-10-28T23:00:00Z",
-      "state": "inProgress",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
@@ -2031,8 +2031,8 @@
           "code": "LYON",
           "image": "http://static.lolesports.com/teams/1743717443673_isotypelyon-03.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
           }
         },
         {
@@ -2040,8 +2040,8 @@
           "code": "IG",
           "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
           "result": {
-            "outcome": null,
-            "gameWins": 1
+            "outcome": "win",
+            "gameWins": 2
           }
         }
       ],
