@@ -2176,26 +2176,26 @@
     },
     {
       "startTime": "2026-10-31T17:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Movistar KOI",
-          "code": "MKOI",
-          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Karmine Corp",
           "code": "KC",
           "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 2
+          }
+        },
+        {
+          "name": "Movistar KOI",
+          "code": "MKOI",
+          "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -2207,27 +2207,27 @@
     },
     {
       "startTime": "2026-10-31T20:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "LOS",
-          "code": "LOS",
-          "image": "http://static.lolesports.com/teams/1784013312149_LOS-OLaranja.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "LYON",
           "code": "LYON",
           "image": "http://static.lolesports.com/teams/1743717443673_isotypelyon-03.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 2
+          }
+        },
+        {
+          "name": "LOS",
+          "code": "LOS",
+          "image": "http://static.lolesports.com/teams/1784013312149_LOS-OLaranja.png",
+          "result": {
+            "outcome": "loss",
+            "gameWins": 1
           }
         }
       ],
@@ -2238,24 +2238,24 @@
     },
     {
       "startTime": "2026-10-31T23:00:00Z",
-      "state": "unstarted",
+      "state": "inProgress",
       "blockName": "Swiss",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Hanwha Life Esports",
-          "code": "HLE",
-          "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+          "name": "BILIBILI GAMING",
+          "code": "BLG",
+          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
           "result": {
             "outcome": null,
             "gameWins": 0
           }
         },
         {
-          "name": "BILIBILI GAMING",
-          "code": "BLG",
-          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+          "name": "Hanwha Life Esports",
+          "code": "HLE",
+          "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
           "result": {
             "outcome": null,
             "gameWins": 0
