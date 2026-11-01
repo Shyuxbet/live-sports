@@ -9,35 +9,35 @@
   },
   {
     "playername":"Knight",
-    "games":183,
-    "avg_kills":5.92,
-    "avg_deaths":1.97,
-    "avg_assists":6.86,
-    "kda":6.49
+    "games":185,
+    "avg_kills":5.94,
+    "avg_deaths":1.95,
+    "avg_assists":6.85,
+    "kda":6.55
   },
   {
     "playername":"ON",
-    "games":183,
+    "games":185,
     "avg_kills":0.81,
-    "avg_deaths":3.47,
-    "avg_assists":12.6,
-    "kda":3.86
+    "avg_deaths":3.46,
+    "avg_assists":12.61,
+    "kda":3.87
   },
   {
     "playername":"Xun",
-    "games":183,
-    "avg_kills":3.91,
+    "games":185,
+    "avg_kills":3.9,
     "avg_deaths":2.74,
-    "avg_assists":9.27,
-    "kda":4.81
+    "avg_assists":9.25,
+    "kda":4.8
   },
   {
     "playername":"Viper",
-    "games":183,
-    "avg_kills":4.92,
-    "avg_deaths":2.27,
-    "avg_assists":7.28,
-    "kda":5.37
+    "games":185,
+    "avg_kills":4.9,
+    "avg_deaths":2.26,
+    "avg_assists":7.31,
+    "kda":5.39
   },
   {
     "playername":"Xiaoxu",
@@ -160,6 +160,22 @@
     "kda":3.74
   },
   {
+    "playername":"Caliste",
+    "games":156,
+    "avg_kills":4.72,
+    "avg_deaths":1.96,
+    "avg_assists":5.56,
+    "kda":5.25
+  },
+  {
+    "playername":"Canna",
+    "games":156,
+    "avg_kills":2.97,
+    "avg_deaths":2.61,
+    "avg_assists":5.26,
+    "kda":3.15
+  },
+  {
     "playername":"Haetae",
     "games":156,
     "avg_kills":3.37,
@@ -168,48 +184,32 @@
     "kda":2.92
   },
   {
-    "playername":"Canna",
-    "games":155,
-    "avg_kills":2.97,
-    "avg_deaths":2.61,
-    "avg_assists":5.25,
-    "kda":3.15
-  },
-  {
-    "playername":"Caliste",
-    "games":155,
-    "avg_kills":4.72,
-    "avg_deaths":1.97,
-    "avg_assists":5.55,
-    "kda":5.22
-  },
-  {
     "playername":"Busio",
-    "games":155,
-    "avg_kills":0.94,
-    "avg_deaths":2.86,
-    "avg_assists":10.58,
-    "kda":4.02
+    "games":156,
+    "avg_kills":0.93,
+    "avg_deaths":2.85,
+    "avg_assists":10.61,
+    "kda":4.04
   },
   {
     "playername":"kyeahoo",
-    "games":155,
-    "avg_kills":2.96,
-    "avg_deaths":2.39,
-    "avg_assists":6.65,
-    "kda":4.02
+    "games":156,
+    "avg_kills":2.95,
+    "avg_deaths":2.38,
+    "avg_assists":6.66,
+    "kda":4.04
   },
   {
     "playername":"Yike",
-    "games":155,
-    "avg_kills":4.13,
-    "avg_deaths":2.9,
-    "avg_assists":6.79,
-    "kda":3.76
+    "games":156,
+    "avg_kills":4.16,
+    "avg_deaths":2.88,
+    "avg_assists":6.78,
+    "kda":3.79
   },
   {
     "playername":"Bin",
-    "games":153,
+    "games":155,
     "avg_kills":2.96,
     "avg_deaths":2.36,
     "avg_assists":5.86,
@@ -240,12 +240,12 @@
     "kda":4.45
   },
   {
-    "playername":"Career",
+    "playername":"Kanavi",
     "games":150,
-    "avg_kills":0.85,
-    "avg_deaths":2.6,
-    "avg_assists":9.95,
-    "kda":4.16
+    "avg_kills":3.82,
+    "avg_deaths":4.01,
+    "avg_assists":8.61,
+    "kda":3.1
   },
   {
     "playername":"Siwoo",
@@ -256,12 +256,28 @@
     "kda":2.07
   },
   {
+    "playername":"Zeka",
+    "games":150,
+    "avg_kills":5.05,
+    "avg_deaths":2.19,
+    "avg_assists":6.69,
+    "kda":5.37
+  },
+  {
     "playername":"Cube",
     "games":150,
     "avg_kills":1.9,
     "avg_deaths":3.06,
     "avg_assists":5.17,
     "kda":2.31
+  },
+  {
+    "playername":"Zeus",
+    "games":150,
+    "avg_kills":3.19,
+    "avg_deaths":3.01,
+    "avg_assists":6.37,
+    "kda":3.18
   },
   {
     "playername":"ShowMaker",
@@ -272,44 +288,28 @@
     "kda":3.65
   },
   {
+    "playername":"Career",
+    "games":150,
+    "avg_kills":0.85,
+    "avg_deaths":2.6,
+    "avg_assists":9.95,
+    "kda":4.16
+  },
+  {
+    "playername":"Gumayusi",
+    "games":150,
+    "avg_kills":4.31,
+    "avg_deaths":3.07,
+    "avg_assists":7.03,
+    "kda":3.69
+  },
+  {
     "playername":"Lucid",
     "games":149,
     "avg_kills":3.03,
     "avg_deaths":3.13,
     "avg_assists":7.33,
     "kda":3.31
-  },
-  {
-    "playername":"Zeka",
-    "games":148,
-    "avg_kills":5.08,
-    "avg_deaths":2.18,
-    "avg_assists":6.71,
-    "kda":5.4
-  },
-  {
-    "playername":"Zeus",
-    "games":148,
-    "avg_kills":3.22,
-    "avg_deaths":2.99,
-    "avg_assists":6.39,
-    "kda":3.21
-  },
-  {
-    "playername":"Gumayusi",
-    "games":148,
-    "avg_kills":4.3,
-    "avg_deaths":3.09,
-    "avg_assists":7.06,
-    "kda":3.68
-  },
-  {
-    "playername":"Kanavi",
-    "games":148,
-    "avg_kills":3.85,
-    "avg_deaths":4.02,
-    "avg_assists":8.61,
-    "kda":3.1
   },
   {
     "playername":"Clear",
@@ -408,6 +408,14 @@
     "kda":5.04
   },
   {
+    "playername":"Delight",
+    "games":144,
+    "avg_kills":0.97,
+    "avg_deaths":3.31,
+    "avg_assists":11.97,
+    "kda":3.91
+  },
+  {
     "playername":"Thayger",
     "games":144,
     "avg_kills":4.25,
@@ -422,14 +430,6 @@
     "avg_deaths":3.16,
     "avg_assists":7.3,
     "kda":3.93
-  },
-  {
-    "playername":"Delight",
-    "games":142,
-    "avg_kills":0.98,
-    "avg_deaths":3.28,
-    "avg_assists":12.01,
-    "kda":3.96
   },
   {
     "playername":"Sero",
@@ -560,12 +560,12 @@
     "kda":6.05
   },
   {
-    "playername":"Duro",
+    "playername":"Chovy",
     "games":133,
-    "avg_kills":0.89,
-    "avg_deaths":2.53,
-    "avg_assists":11.86,
-    "kda":5.05
+    "avg_kills":4.22,
+    "avg_deaths":2.05,
+    "avg_assists":6.98,
+    "kda":5.47
   },
   {
     "playername":"Canyon",
@@ -576,12 +576,28 @@
     "kda":5.19
   },
   {
-    "playername":"Chovy",
+    "playername":"Ruler",
     "games":133,
-    "avg_kills":4.22,
-    "avg_deaths":2.05,
-    "avg_assists":6.98,
-    "kda":5.47
+    "avg_kills":5.02,
+    "avg_deaths":2.23,
+    "avg_assists":6.47,
+    "kda":5.16
+  },
+  {
+    "playername":"Isles",
+    "games":133,
+    "avg_kills":0.62,
+    "avg_deaths":2.41,
+    "avg_assists":9.97,
+    "kda":4.4
+  },
+  {
+    "playername":"Berserker",
+    "games":133,
+    "avg_kills":4.59,
+    "avg_deaths":1.92,
+    "avg_assists":4.92,
+    "kda":4.94
   },
   {
     "playername":"Kiin",
@@ -592,12 +608,28 @@
     "kda":3.99
   },
   {
-    "playername":"Ruler",
+    "playername":"Saint",
     "games":133,
-    "avg_kills":5.02,
-    "avg_deaths":2.23,
-    "avg_assists":6.47,
-    "kda":5.16
+    "avg_kills":3.97,
+    "avg_deaths":2.5,
+    "avg_assists":5.35,
+    "kda":3.73
+  },
+  {
+    "playername":"Duro",
+    "games":133,
+    "avg_kills":0.89,
+    "avg_deaths":2.53,
+    "avg_assists":11.86,
+    "kda":5.05
+  },
+  {
+    "playername":"Jool",
+    "games":132,
+    "avg_kills":4.36,
+    "avg_deaths":3.13,
+    "avg_assists":7.2,
+    "kda":3.69
   },
   {
     "playername":"Zicssi",
@@ -616,14 +648,6 @@
     "kda":3.39
   },
   {
-    "playername":"Jool",
-    "games":132,
-    "avg_kills":4.36,
-    "avg_deaths":3.13,
-    "avg_assists":7.2,
-    "kda":3.69
-  },
-  {
     "playername":"Kryze",
     "games":132,
     "avg_kills":3.77,
@@ -632,20 +656,12 @@
     "kda":4.21
   },
   {
-    "playername":"Aetinoth",
-    "games":131,
-    "avg_kills":5.29,
-    "avg_deaths":3.22,
-    "avg_assists":6.39,
-    "kda":3.63
-  },
-  {
-    "playername":"Piero",
-    "games":131,
-    "avg_kills":0.92,
+    "playername":"Curse",
+    "games":132,
+    "avg_kills":2.95,
     "avg_deaths":3.13,
-    "avg_assists":12.89,
-    "kda":4.41
+    "avg_assists":8.2,
+    "kda":3.56
   },
   {
     "playername":"Kaiser",
@@ -656,28 +672,20 @@
     "kda":4.38
   },
   {
-    "playername":"Saint",
-    "games":130,
-    "avg_kills":4.02,
-    "avg_deaths":2.48,
-    "avg_assists":5.37,
-    "kda":3.79
+    "playername":"Piero",
+    "games":131,
+    "avg_kills":0.92,
+    "avg_deaths":3.13,
+    "avg_assists":12.89,
+    "kda":4.41
   },
   {
-    "playername":"Isles",
-    "games":130,
-    "avg_kills":0.63,
-    "avg_deaths":2.43,
-    "avg_assists":10.01,
-    "kda":4.38
-  },
-  {
-    "playername":"Berserker",
-    "games":130,
-    "avg_kills":4.57,
-    "avg_deaths":1.91,
-    "avg_assists":4.97,
-    "kda":5.0
+    "playername":"Aetinoth",
+    "games":131,
+    "avg_kills":5.29,
+    "avg_deaths":3.22,
+    "avg_assists":6.39,
+    "kda":3.63
   },
   {
     "playername":"Bean",
@@ -696,12 +704,12 @@
     "kda":2.78
   },
   {
-    "playername":"Curse",
-    "games":129,
-    "avg_kills":2.95,
-    "avg_deaths":3.14,
-    "avg_assists":8.33,
-    "kda":3.6
+    "playername":"Dhokla",
+    "games":130,
+    "avg_kills":2.52,
+    "avg_deaths":2.87,
+    "avg_assists":5.16,
+    "kda":2.68
   },
   {
     "playername":"Despair",
@@ -726,14 +734,6 @@
     "avg_deaths":3.14,
     "avg_assists":10.32,
     "kda":3.52
-  },
-  {
-    "playername":"Dhokla",
-    "games":127,
-    "avg_kills":2.52,
-    "avg_deaths":2.91,
-    "avg_assists":5.19,
-    "kda":2.65
   },
   {
     "playername":"Soft",
@@ -784,12 +784,12 @@
     "kda":2.93
   },
   {
-    "playername":"Pleata",
+    "playername":"Feisty",
     "games":125,
-    "avg_kills":0.9,
-    "avg_deaths":2.56,
-    "avg_assists":11.46,
-    "kda":4.83
+    "avg_kills":3.23,
+    "avg_deaths":2.34,
+    "avg_assists":6.62,
+    "kda":4.22
   },
   {
     "playername":"DDoiV",
