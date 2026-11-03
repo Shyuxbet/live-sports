@@ -2269,24 +2269,24 @@
     },
     {
       "startTime": "2026-11-03T22:00:00Z",
-      "state": "unstarted",
+      "state": "inProgress",
       "blockName": "Quarterfinals",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TOP ESPORTS",
-          "code": "TES",
-          "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "Invictus Gaming",
           "code": "IG",
           "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 1
+          }
+        },
+        {
+          "name": "TOP ESPORTS",
+          "code": "TES",
+          "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
           "result": {
             "outcome": null,
             "gameWins": 0
