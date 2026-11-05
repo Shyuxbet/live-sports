@@ -2269,7 +2269,7 @@
     },
     {
       "startTime": "2026-11-03T22:00:00Z",
-      "state": "inProgress",
+      "state": "completed",
       "blockName": "Quarterfinals",
       "league": "Worlds",
       "leagueIcon": null,
@@ -2279,8 +2279,8 @@
           "code": "IG",
           "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
           "result": {
-            "outcome": null,
-            "gameWins": 1
+            "outcome": "win",
+            "gameWins": 3
           }
         },
         {
@@ -2288,8 +2288,8 @@
           "code": "TES",
           "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
           }
         }
       ],
@@ -2300,7 +2300,7 @@
     },
     {
       "startTime": "2026-11-04T22:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Quarterfinals",
       "league": "Worlds",
       "leagueIcon": null,
@@ -2310,8 +2310,8 @@
           "code": "GEN",
           "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
           }
         },
         {
@@ -2319,7 +2319,7 @@
           "code": "LYON",
           "image": "http://static.lolesports.com/teams/1743717443673_isotypelyon-03.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -2399,16 +2399,22 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Gen.G Esports",
+          "code": "GEN",
+          "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Invictus Gaming",
+          "code": "IG",
+          "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
