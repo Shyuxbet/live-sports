@@ -2331,7 +2331,7 @@
     },
     {
       "startTime": "2026-11-05T22:00:00Z",
-      "state": "unstarted",
+      "state": "inProgress",
       "blockName": "Quarterfinals",
       "league": "Worlds",
       "leagueIcon": null,
