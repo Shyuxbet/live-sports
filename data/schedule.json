@@ -2331,26 +2331,26 @@
     },
     {
       "startTime": "2026-11-05T22:00:00Z",
-      "state": "inProgress",
+      "state": "completed",
       "blockName": "Quarterfinals",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
         {
-          "name": "Dplus KIA",
-          "code": "DK",
-          "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
-        {
           "name": "BILIBILI GAMING",
           "code": "BLG",
           "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
           "result": {
-            "outcome": null,
+            "outcome": "win",
+            "gameWins": 3
+          }
+        },
+        {
+          "name": "Dplus KIA",
+          "code": "DK",
+          "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+          "result": {
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -2362,7 +2362,7 @@
     },
     {
       "startTime": "2026-11-06T22:00:00Z",
-      "state": "unstarted",
+      "state": "inProgress",
       "blockName": "Quarterfinals",
       "league": "Worlds",
       "leagueIcon": null,
@@ -2436,10 +2436,13 @@
           "result": null
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "BILIBILI GAMING",
+          "code": "BLG",
+          "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
