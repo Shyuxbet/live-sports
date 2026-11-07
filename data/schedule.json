@@ -2362,7 +2362,7 @@
     },
     {
       "startTime": "2026-11-06T22:00:00Z",
-      "state": "inProgress",
+      "state": "completed",
       "blockName": "Quarterfinals",
       "league": "Worlds",
       "leagueIcon": null,
@@ -2372,8 +2372,8 @@
           "code": "T1",
           "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
           }
         },
         {
@@ -2381,8 +2381,8 @@
           "code": "KC",
           "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "loss",
+            "gameWins": 1
           }
         }
       ],
@@ -2430,10 +2430,13 @@
       "leagueIcon": null,
       "teams": [
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "T1",
+          "code": "T1",
+          "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         },
         {
           "name": "BILIBILI GAMING",
