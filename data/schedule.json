@@ -2393,7 +2393,7 @@
     },
     {
       "startTime": "2026-11-07T22:00:00Z",
-      "state": "unstarted",
+      "state": "completed",
       "blockName": "Semifinals",
       "league": "Worlds",
       "leagueIcon": null,
@@ -2403,8 +2403,8 @@
           "code": "GEN",
           "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
           "result": {
-            "outcome": null,
-            "gameWins": 0
+            "outcome": "win",
+            "gameWins": 3
           }
         },
         {
@@ -2412,7 +2412,7 @@
           "code": "IG",
           "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
           "result": {
-            "outcome": null,
+            "outcome": "loss",
             "gameWins": 0
           }
         }
@@ -2424,27 +2424,27 @@
     },
     {
       "startTime": "2026-11-08T22:00:00Z",
-      "state": "unstarted",
+      "state": "inProgress",
       "blockName": "Semifinals",
       "league": "Worlds",
       "leagueIcon": null,
       "teams": [
-        {
-          "name": "T1",
-          "code": "T1",
-          "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-          "result": {
-            "outcome": null,
-            "gameWins": 0
-          }
-        },
         {
           "name": "BILIBILI GAMING",
           "code": "BLG",
           "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
           "result": {
             "outcome": null,
-            "gameWins": 0
+            "gameWins": 2
+          }
+        },
+        {
+          "name": "T1",
+          "code": "T1",
+          "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 1
           }
         }
       ],
@@ -2467,10 +2467,13 @@
           "result": null
         },
         {
-          "name": "TBD",
-          "code": "TBD",
-          "image": "https://static.lolesports.com/teams/team-tbd.png",
-          "result": null
+          "name": "Gen.G Esports",
+          "code": "GEN",
+          "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
+          "result": {
+            "outcome": null,
+            "gameWins": 0
+          }
         }
       ],
       "strategy": {
